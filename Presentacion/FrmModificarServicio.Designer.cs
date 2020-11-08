@@ -94,7 +94,7 @@
             // BtnModificar
             // 
             this.BtnModificar.ForeColor = System.Drawing.Color.Black;
-            this.BtnModificar.Location = new System.Drawing.Point(390, 331);
+            this.BtnModificar.Location = new System.Drawing.Point(397, 331);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(94, 29);
             this.BtnModificar.TabIndex = 7;
@@ -104,7 +104,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(384, 218);
+            this.pictureBox1.Location = new System.Drawing.Point(391, 218);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 107);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -116,9 +116,9 @@
             this.TxtValorServicio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TxtValorServicio.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtValorServicio.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TxtValorServicio.Location = new System.Drawing.Point(296, 182);
+            this.TxtValorServicio.Location = new System.Drawing.Point(303, 182);
             this.TxtValorServicio.Name = "TxtValorServicio";
-            this.TxtValorServicio.Size = new System.Drawing.Size(326, 30);
+            this.TxtValorServicio.Size = new System.Drawing.Size(338, 30);
             this.TxtValorServicio.TabIndex = 0;
             // 
             // label4
@@ -127,7 +127,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(144, 182);
+            this.label4.Location = new System.Drawing.Point(151, 182);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(146, 20);
             this.label4.TabIndex = 0;
@@ -138,7 +138,7 @@
             this.TxtDescripcion.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TxtDescripcion.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtDescripcion.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TxtDescripcion.Location = new System.Drawing.Point(559, 112);
+            this.TxtDescripcion.Location = new System.Drawing.Point(566, 112);
             this.TxtDescripcion.Name = "TxtDescripcion";
             this.TxtDescripcion.Size = new System.Drawing.Size(299, 30);
             this.TxtDescripcion.TabIndex = 0;
@@ -149,7 +149,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(452, 112);
+            this.label3.Location = new System.Drawing.Point(459, 112);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 20);
             this.label3.TabIndex = 0;
@@ -161,7 +161,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(39, 112);
+            this.label2.Location = new System.Drawing.Point(46, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 0;
@@ -172,7 +172,7 @@
             this.TxtNombreServicio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TxtNombreServicio.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtNombreServicio.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TxtNombreServicio.Location = new System.Drawing.Point(121, 112);
+            this.TxtNombreServicio.Location = new System.Drawing.Point(128, 112);
             this.TxtNombreServicio.Name = "TxtNombreServicio";
             this.TxtNombreServicio.Size = new System.Drawing.Size(308, 30);
             this.TxtNombreServicio.TabIndex = 0;
@@ -183,7 +183,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(202, 52);
+            this.label1.Location = new System.Drawing.Point(204, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 20);
             this.label1.TabIndex = 0;
@@ -191,7 +191,7 @@
             // 
             // TxtIdServicio
             // 
-            this.TxtIdServicio.Location = new System.Drawing.Point(296, 52);
+            this.TxtIdServicio.Location = new System.Drawing.Point(303, 52);
             this.TxtIdServicio.Name = "TxtIdServicio";
             this.TxtIdServicio.Size = new System.Drawing.Size(338, 27);
             this.TxtIdServicio.TabIndex = 6;

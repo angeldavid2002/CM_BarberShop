@@ -39,6 +39,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.PanelPrincipalSuperior = new System.Windows.Forms.Panel();
+            this.ListViewServicios = new System.Windows.Forms.ListView();
+            this.IdServicio = new System.Windows.Forms.ColumnHeader();
+            this.NombreServicio = new System.Windows.Forms.ColumnHeader();
+            this.DescripcionServicio = new System.Windows.Forms.ColumnHeader();
+            this.ValorServicio = new System.Windows.Forms.ColumnHeader();
+            this.BtnAgregarServicio = new System.Windows.Forms.Button();
+            this.CmbBarbero = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.PictureReserva = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -89,7 +97,7 @@
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPrincipal.Location = new System.Drawing.Point(0, 40);
             this.PanelPrincipal.Name = "PanelPrincipal";
-            this.PanelPrincipal.Size = new System.Drawing.Size(900, 560);
+            this.PanelPrincipal.Size = new System.Drawing.Size(900, 565);
             this.PanelPrincipal.TabIndex = 1;
             // 
             // PanelPrincipalInferior
@@ -101,9 +109,9 @@
             this.PanelPrincipalInferior.Controls.Add(this.pictureBox1);
             this.PanelPrincipalInferior.Controls.Add(this.label6);
             this.PanelPrincipalInferior.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelPrincipalInferior.Location = new System.Drawing.Point(0, 330);
+            this.PanelPrincipalInferior.Location = new System.Drawing.Point(0, 388);
             this.PanelPrincipalInferior.Name = "PanelPrincipalInferior";
-            this.PanelPrincipalInferior.Size = new System.Drawing.Size(900, 230);
+            this.PanelPrincipalInferior.Size = new System.Drawing.Size(900, 177);
             this.PanelPrincipalInferior.TabIndex = 1;
             // 
             // BtnEliminarReserva
@@ -156,6 +164,10 @@
             // PanelPrincipalSuperior
             // 
             this.PanelPrincipalSuperior.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelPrincipalSuperior.Controls.Add(this.ListViewServicios);
+            this.PanelPrincipalSuperior.Controls.Add(this.BtnAgregarServicio);
+            this.PanelPrincipalSuperior.Controls.Add(this.CmbBarbero);
+            this.PanelPrincipalSuperior.Controls.Add(this.label4);
             this.PanelPrincipalSuperior.Controls.Add(this.BtnRegistrar);
             this.PanelPrincipalSuperior.Controls.Add(this.PictureReserva);
             this.PanelPrincipalSuperior.Controls.Add(this.label7);
@@ -169,27 +181,92 @@
             this.PanelPrincipalSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelPrincipalSuperior.Location = new System.Drawing.Point(0, 0);
             this.PanelPrincipalSuperior.Name = "PanelPrincipalSuperior";
-            this.PanelPrincipalSuperior.Size = new System.Drawing.Size(900, 330);
+            this.PanelPrincipalSuperior.Size = new System.Drawing.Size(900, 388);
             this.PanelPrincipalSuperior.TabIndex = 0;
+            // 
+            // ListViewServicios
+            // 
+            this.ListViewServicios.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.IdServicio,
+            this.NombreServicio,
+            this.DescripcionServicio,
+            this.ValorServicio});
+            this.ListViewServicios.HideSelection = false;
+            this.ListViewServicios.Location = new System.Drawing.Point(476, 107);
+            this.ListViewServicios.Name = "ListViewServicios";
+            this.ListViewServicios.Size = new System.Drawing.Size(411, 173);
+            this.ListViewServicios.TabIndex = 11;
+            this.ListViewServicios.UseCompatibleStateImageBehavior = false;
+            this.ListViewServicios.View = System.Windows.Forms.View.Details;
+            // 
+            // IdServicio
+            // 
+            this.IdServicio.Text = "Id Servicio";
+            this.IdServicio.Width = 100;
+            // 
+            // NombreServicio
+            // 
+            this.NombreServicio.Text = "Nombre";
+            this.NombreServicio.Width = 100;
+            // 
+            // DescripcionServicio
+            // 
+            this.DescripcionServicio.Text = "Descripcion";
+            this.DescripcionServicio.Width = 100;
+            // 
+            // ValorServicio
+            // 
+            this.ValorServicio.Text = "Valor";
+            this.ValorServicio.Width = 100;
+            // 
+            // BtnAgregarServicio
+            // 
+            this.BtnAgregarServicio.ForeColor = System.Drawing.Color.Black;
+            this.BtnAgregarServicio.Location = new System.Drawing.Point(364, 248);
+            this.BtnAgregarServicio.Name = "BtnAgregarServicio";
+            this.BtnAgregarServicio.Size = new System.Drawing.Size(106, 29);
+            this.BtnAgregarServicio.TabIndex = 10;
+            this.BtnAgregarServicio.Text = "Agregar";
+            this.BtnAgregarServicio.UseVisualStyleBackColor = true;
+            // 
+            // CmbBarbero
+            // 
+            this.CmbBarbero.FormattingEnabled = true;
+            this.CmbBarbero.Location = new System.Drawing.Point(191, 151);
+            this.CmbBarbero.Name = "CmbBarbero";
+            this.CmbBarbero.Size = new System.Drawing.Size(279, 28);
+            this.CmbBarbero.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(11, 158);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Barbero:";
             // 
             // BtnRegistrar
             // 
             this.BtnRegistrar.BackColor = System.Drawing.Color.Transparent;
             this.BtnRegistrar.FlatAppearance.BorderSize = 0;
             this.BtnRegistrar.ForeColor = System.Drawing.Color.Black;
-            this.BtnRegistrar.Location = new System.Drawing.Point(425, 284);
+            this.BtnRegistrar.Location = new System.Drawing.Point(385, 327);
             this.BtnRegistrar.Name = "BtnRegistrar";
-            this.BtnRegistrar.Size = new System.Drawing.Size(94, 29);
+            this.BtnRegistrar.Size = new System.Drawing.Size(139, 29);
             this.BtnRegistrar.TabIndex = 8;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = false;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // PictureReserva
             // 
             this.PictureReserva.Image = ((System.Drawing.Image)(resources.GetObject("PictureReserva.Image")));
             this.PictureReserva.Location = new System.Drawing.Point(364, 24);
             this.PictureReserva.Name = "PictureReserva";
-            this.PictureReserva.Size = new System.Drawing.Size(206, 102);
+            this.PictureReserva.Size = new System.Drawing.Size(206, 77);
             this.PictureReserva.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureReserva.TabIndex = 7;
             this.PictureReserva.TabStop = false;
@@ -198,7 +275,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(364, 246);
+            this.label7.Location = new System.Drawing.Point(191, 222);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(248, 20);
             this.label7.TabIndex = 6;
@@ -207,9 +284,9 @@
             // CmbTipoServicio
             // 
             this.CmbTipoServicio.FormattingEnabled = true;
-            this.CmbTipoServicio.Location = new System.Drawing.Point(576, 132);
+            this.CmbTipoServicio.Location = new System.Drawing.Point(88, 249);
             this.CmbTipoServicio.Name = "CmbTipoServicio";
-            this.CmbTipoServicio.Size = new System.Drawing.Size(283, 28);
+            this.CmbTipoServicio.Size = new System.Drawing.Size(270, 28);
             this.CmbTipoServicio.TabIndex = 5;
             // 
             // TxtHoraReserva
@@ -217,9 +294,9 @@
             this.TxtHoraReserva.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TxtHoraReserva.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtHoraReserva.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TxtHoraReserva.Location = new System.Drawing.Point(312, 213);
+            this.TxtHoraReserva.Location = new System.Drawing.Point(191, 189);
             this.TxtHoraReserva.Name = "TxtHoraReserva";
-            this.TxtHoraReserva.Size = new System.Drawing.Size(340, 30);
+            this.TxtHoraReserva.Size = new System.Drawing.Size(279, 30);
             this.TxtHoraReserva.TabIndex = 2;
             // 
             // label5
@@ -228,7 +305,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(173, 223);
+            this.label5.Location = new System.Drawing.Point(11, 199);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 20);
             this.label5.TabIndex = 0;
@@ -239,11 +316,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(443, 142);
+            this.label3.Location = new System.Drawing.Point(11, 257);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 20);
+            this.label3.Size = new System.Drawing.Size(67, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Tipo de servicio";
+            this.label3.Text = "Servicio";
             // 
             // label2
             // 
@@ -251,7 +328,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(10, 142);
+            this.label2.Location = new System.Drawing.Point(11, 117);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(170, 20);
             this.label2.TabIndex = 0;
@@ -262,9 +339,9 @@
             this.TxtIdentificacion.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TxtIdentificacion.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtIdentificacion.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TxtIdentificacion.Location = new System.Drawing.Point(186, 132);
+            this.TxtIdentificacion.Location = new System.Drawing.Point(191, 107);
             this.TxtIdentificacion.Name = "TxtIdentificacion";
-            this.TxtIdentificacion.Size = new System.Drawing.Size(250, 30);
+            this.TxtIdentificacion.Size = new System.Drawing.Size(279, 30);
             this.TxtIdentificacion.TabIndex = 2;
             // 
             // label1
@@ -282,7 +359,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(900, 600);
+            this.ClientSize = new System.Drawing.Size(900, 605);
             this.Controls.Add(this.PanelPrincipal);
             this.Controls.Add(this.PanelSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -322,5 +399,13 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnRegistrar;
         private System.Windows.Forms.PictureBox PictureReserva;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox CmbBarbero;
+        private System.Windows.Forms.ListView ListViewServicios;
+        private System.Windows.Forms.ColumnHeader IdServicio;
+        private System.Windows.Forms.ColumnHeader NombreServicio;
+        private System.Windows.Forms.ColumnHeader DescripcionServicio;
+        private System.Windows.Forms.ColumnHeader ValorServicio;
+        private System.Windows.Forms.Button BtnAgregarServicio;
     }
 }

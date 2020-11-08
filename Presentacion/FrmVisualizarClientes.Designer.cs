@@ -35,21 +35,21 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelFiltro = new System.Windows.Forms.Panel();
             this.DtGridView = new System.Windows.Forms.DataGridView();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.identificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numeroTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.CmbTipoFiltro = new System.Windows.Forms.ComboBox();
             this.TxtIdConsulta = new System.Windows.Forms.TextBox();
+            this.identificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numeroTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PanelSuperior.SuspendLayout();
             this.PanelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.PanelFiltro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtGridView)).BeginInit();
+            this.PanelFiltro.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelSuperior
@@ -104,11 +104,6 @@
             // 
             // PanelFiltro
             // 
-            this.PanelFiltro.Controls.Add(this.DtGridView);
-            this.PanelFiltro.Location = new System.Drawing.Point(30, 210);
-            this.PanelFiltro.Name = "PanelFiltro";
-            this.PanelFiltro.Size = new System.Drawing.Size(840, 425);
-            this.PanelFiltro.TabIndex = 4;
             // 
             // DtGridView
             // 
@@ -116,9 +111,9 @@
             this.DtGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DtGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.identificacion,
             this.nombre,
             this.apellido,
-            this.identificacion,
             this.numeroTelefono,
             this.edad,
             this.direccion});
@@ -129,47 +124,11 @@
             this.DtGridView.Size = new System.Drawing.Size(840, 425);
             this.DtGridView.TabIndex = 0;
             this.DtGridView.Text = "dataGridView1";
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "nombre";
-            this.nombre.MinimumWidth = 6;
-            this.nombre.Name = "nombre";
-            this.nombre.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // apellido
-            // 
-            this.apellido.HeaderText = "apellido";
-            this.apellido.MinimumWidth = 6;
-            this.apellido.Name = "apellido";
-            this.apellido.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // identificacion
-            // 
-            this.identificacion.HeaderText = "identificacion";
-            this.identificacion.MinimumWidth = 6;
-            this.identificacion.Name = "identificacion";
-            this.identificacion.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // numeroTelefono
-            // 
-            this.numeroTelefono.HeaderText = "numero de telefono";
-            this.numeroTelefono.MinimumWidth = 6;
-            this.numeroTelefono.Name = "numeroTelefono";
-            this.numeroTelefono.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // edad
-            // 
-            this.edad.HeaderText = "edad";
-            this.edad.MinimumWidth = 6;
-            this.edad.Name = "edad";
-            this.edad.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // direccion
-            // 
-            this.direccion.HeaderText = "direccion";
-            this.direccion.MinimumWidth = 6;
-            this.direccion.Name = "direccion";
+            this.PanelFiltro.Controls.Add(this.DtGridView);
+            this.PanelFiltro.Location = new System.Drawing.Point(30, 210);
+            this.PanelFiltro.Name = "PanelFiltro";
+            this.PanelFiltro.Size = new System.Drawing.Size(840, 425);
+            this.PanelFiltro.TabIndex = 4;
             // 
             // BtnBuscar
             // 
@@ -212,6 +171,48 @@
             this.TxtIdConsulta.Size = new System.Drawing.Size(518, 27);
             this.TxtIdConsulta.TabIndex = 0;
             // 
+            // identificacion
+            // 
+            this.identificacion.HeaderText = "identificacion";
+            this.identificacion.MinimumWidth = 6;
+            this.identificacion.Name = "identificacion";
+            this.identificacion.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "nombre";
+            this.nombre.MinimumWidth = 6;
+            this.nombre.Name = "nombre";
+            this.nombre.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // apellido
+            // 
+            this.apellido.HeaderText = "apellido";
+            this.apellido.MinimumWidth = 6;
+            this.apellido.Name = "apellido";
+            this.apellido.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // numeroTelefono
+            // 
+            this.numeroTelefono.HeaderText = "numero de telefono";
+            this.numeroTelefono.MinimumWidth = 6;
+            this.numeroTelefono.Name = "numeroTelefono";
+            this.numeroTelefono.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // edad
+            // 
+            this.edad.HeaderText = "edad";
+            this.edad.MinimumWidth = 6;
+            this.edad.Name = "edad";
+            this.edad.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // direccion
+            // 
+            this.direccion.HeaderText = "direccion";
+            this.direccion.MinimumWidth = 6;
+            this.direccion.Name = "direccion";
+            this.direccion.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
             // FrmVisualizarClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -228,8 +229,8 @@
             this.PanelPrincipal.ResumeLayout(false);
             this.PanelPrincipal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.PanelFiltro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DtGridView)).EndInit();
+            this.PanelFiltro.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -245,12 +246,12 @@
         private System.Windows.Forms.Panel PanelFiltro;
         private System.Windows.Forms.DataGridView DtGridView;
         private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn identificacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn identificacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroTelefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn edad;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

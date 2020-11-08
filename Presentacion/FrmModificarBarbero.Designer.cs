@@ -102,7 +102,7 @@
             // PictureEdit
             // 
             this.PictureEdit.Image = ((System.Drawing.Image)(resources.GetObject("PictureEdit.Image")));
-            this.PictureEdit.Location = new System.Drawing.Point(419, 255);
+            this.PictureEdit.Location = new System.Drawing.Point(420, 236);
             this.PictureEdit.Name = "PictureEdit";
             this.PictureEdit.Size = new System.Drawing.Size(140, 107);
             this.PictureEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,7 +125,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(214, 49);
+            this.label6.Location = new System.Drawing.Point(215, 30);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 20);
             this.label6.TabIndex = 0;
@@ -133,7 +133,7 @@
             // 
             // TxtIdBarbero
             // 
-            this.TxtIdBarbero.Location = new System.Drawing.Point(315, 49);
+            this.TxtIdBarbero.Location = new System.Drawing.Point(316, 30);
             this.TxtIdBarbero.Name = "TxtIdBarbero";
             this.TxtIdBarbero.Size = new System.Drawing.Size(338, 30);
             this.TxtIdBarbero.TabIndex = 6;
@@ -143,9 +143,9 @@
             this.TxtTelefono.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.TxtTelefono.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtTelefono.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TxtTelefono.Location = new System.Drawing.Point(357, 219);
+            this.TxtTelefono.Location = new System.Drawing.Point(316, 200);
             this.TxtTelefono.Name = "TxtTelefono";
-            this.TxtTelefono.Size = new System.Drawing.Size(250, 30);
+            this.TxtTelefono.Size = new System.Drawing.Size(338, 30);
             this.TxtTelefono.TabIndex = 4;
             // 
             // label5
@@ -155,7 +155,7 @@
             this.label5.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label5.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(272, 219);
+            this.label5.Location = new System.Drawing.Point(215, 200);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 20);
             this.label5.TabIndex = 0;
@@ -168,7 +168,7 @@
             this.label4.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label4.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(500, 167);
+            this.label4.Location = new System.Drawing.Point(501, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 20);
             this.label4.TabIndex = 0;
@@ -181,7 +181,7 @@
             this.label3.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label3.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(533, 111);
+            this.label3.Location = new System.Drawing.Point(534, 92);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 20);
             this.label3.TabIndex = 0;
@@ -194,7 +194,7 @@
             this.label2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label2.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(58, 167);
+            this.label2.Location = new System.Drawing.Point(59, 148);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 0;
@@ -206,7 +206,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(57, 111);
+            this.label1.Location = new System.Drawing.Point(58, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 20);
             this.label1.TabIndex = 0;
@@ -217,7 +217,7 @@
             this.TxtNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TxtNombre.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtNombre.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TxtNombre.Location = new System.Drawing.Point(139, 111);
+            this.TxtNombre.Location = new System.Drawing.Point(140, 92);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(250, 30);
             this.TxtNombre.TabIndex = 0;
@@ -227,7 +227,7 @@
             this.TxtDireccion.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.TxtDireccion.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtDireccion.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TxtDireccion.Location = new System.Drawing.Point(590, 157);
+            this.TxtDireccion.Location = new System.Drawing.Point(591, 138);
             this.TxtDireccion.Name = "TxtDireccion";
             this.TxtDireccion.Size = new System.Drawing.Size(250, 30);
             this.TxtDireccion.TabIndex = 3;
@@ -237,7 +237,7 @@
             this.TxtApellido.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.TxtApellido.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtApellido.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TxtApellido.Location = new System.Drawing.Point(139, 157);
+            this.TxtApellido.Location = new System.Drawing.Point(140, 138);
             this.TxtApellido.Name = "TxtApellido";
             this.TxtApellido.Size = new System.Drawing.Size(250, 30);
             this.TxtApellido.TabIndex = 1;
@@ -247,7 +247,7 @@
             this.TxtEdad.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.TxtEdad.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtEdad.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TxtEdad.Location = new System.Drawing.Point(590, 111);
+            this.TxtEdad.Location = new System.Drawing.Point(591, 92);
             this.TxtEdad.Name = "TxtEdad";
             this.TxtEdad.Size = new System.Drawing.Size(250, 30);
             this.TxtEdad.TabIndex = 5;

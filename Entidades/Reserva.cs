@@ -11,14 +11,15 @@ namespace Entidades
         public int idReserva { get; set; }
         public DateTime horaReserva { get; set; }
         public List<Servicio> tipoServicio { get; set; }
-        public double valorServicio { get; set; }
+        public double valorReserva { get; set; }
+        public Barbero barbero { get; set; }
 
         public string MostrarDatos()
         {
             return "id reserva: "+idReserva+"\n"+
                     "hora reserva: "+horaReserva+"\n"+
-                    "tipo servicio: "+tipoServicio+"\n"+
-                    "valor servicio"+valorServicio +"";
+                    "valor Reserva: "+valorReserva +"\n"+
+                    "nombre Barbero: "+barbero+"";
         }
     }
 }

@@ -138,18 +138,8 @@ namespace Presentacion
 
         private void BtnVisualizacionClientes_Click(object sender, EventArgs e)
         {
-            LimpiarPanel();
-            FrmVisualizarClientes form = new FrmVisualizarClientes();
-            form.TopLevel = false;
-            this.PanelPrincipal.Controls.Add(form);
-            this.PanelPrincipal.Tag = form;
-            form.Show();
-        }
-
-        private void BtnGestionReservaCliente_Click(object sender, EventArgs e)
-        {
            LimpiarPanel();
-            FrmGestionReservaCliente form = new FrmGestionReservaCliente();
+            FrmVisualizarClientes form = new FrmVisualizarClientes();
             form.TopLevel = false;
             this.PanelPrincipal.Controls.Add(form);
             this.PanelPrincipal.Tag = form;
@@ -174,16 +164,6 @@ namespace Presentacion
         private void PicIconoBarberia_Click(object sender, EventArgs e)
         {
             LimpiarPanel();
-        }
-
-        private void BtnGestionCliente_Click(object sender, EventArgs e)
-        {
-            LimpiarPanel();
-            FrmGestionCliente form = new FrmGestionCliente();
-            form.TopLevel = false;
-            this.PanelPrincipal.Controls.Add(form);
-            this.PanelPrincipal.Tag = form;
-            form.Show();
         }
 
         private void BtnModificarBarbero_Click(object sender, EventArgs e)
@@ -230,6 +210,86 @@ namespace Presentacion
         {
             LimpiarPanel();
             FrmRegistrarServicio form = new FrmRegistrarServicio();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
+
+        private void BtnVisualizarReservas_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmVisualizarReserva form = new FrmVisualizarReserva();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
+
+        private void BtnRegistrarClientes_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmRegistrarCliente form = new FrmRegistrarCliente();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
+
+        private void BtnRegistrarReserva_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmRegistrarReserva form = new FrmRegistrarReserva();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
+
+        private void BtnVisualizacionClientes_Click_1(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmVisualizarClientes form = new FrmVisualizarClientes();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
+
+        private void BtnModificarReserva_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmModificarReserva form = new FrmModificarReserva();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
+
+        private void BtnEliminarCliente_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmEliminarCliente form = new FrmEliminarCliente();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
+
+        private void BtnEliminarReserva_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmEliminarReserva form = new FrmEliminarReserva();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
+
+        private void BtnRegistrarReserva_Click_1(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmRegistrarReserva form = new FrmRegistrarReserva();
             form.TopLevel = false;
             this.PanelPrincipal.Controls.Add(form);
             this.PanelPrincipal.Tag = form;

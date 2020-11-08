@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FrmGestionReservaCliente : Form
+    public partial class FrmModificarReserva : Form
     {
-        public FrmGestionReservaCliente()
+        public FrmModificarReserva()
         {
             InitializeComponent();
         }
 
-        private void BtnCerrar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Close();
         }
@@ -29,11 +29,6 @@ namespace Presentacion
         {
             ReleaseCapture();
             SendMenssage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void BtnRegistrar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

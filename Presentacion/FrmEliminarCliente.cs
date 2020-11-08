@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FrmGestionReservaCliente : Form
+    public partial class FrmEliminarCliente : Form
     {
-        public FrmGestionReservaCliente()
+        public FrmEliminarCliente()
         {
             InitializeComponent();
         }
 
-        private void BtnCerrar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Close();
         }
@@ -24,16 +24,10 @@ namespace Presentacion
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMenssage(System.IntPtr hWnh, int wMsg, int wParam, int iParam);
-
         private void PanelSuperior_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMenssage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void BtnRegistrar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

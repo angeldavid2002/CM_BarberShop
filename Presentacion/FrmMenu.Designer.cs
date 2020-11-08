@@ -42,9 +42,13 @@
             this.BtnCambiarPassword = new System.Windows.Forms.Button();
             this.BtnGestionUsuario = new System.Windows.Forms.Button();
             this.PanelSubMenuCliente = new System.Windows.Forms.Panel();
+            this.BtnEliminarReserva = new System.Windows.Forms.Button();
+            this.BtnEliminarCliente = new System.Windows.Forms.Button();
+            this.BtnModificarReserva = new System.Windows.Forms.Button();
+            this.BtnRegistrarReserva = new System.Windows.Forms.Button();
+            this.BtnRegistrarClientes = new System.Windows.Forms.Button();
+            this.BtnVisualizarReservas = new System.Windows.Forms.Button();
             this.BtnModificarCliente = new System.Windows.Forms.Button();
-            this.BtnGestionReservaCliente = new System.Windows.Forms.Button();
-            this.BtnGestionCliente = new System.Windows.Forms.Button();
             this.BtnVisualizacionClientes = new System.Windows.Forms.Button();
             this.BtnAdministrarClientes = new System.Windows.Forms.Button();
             this.PanelSubMenuBarberos = new System.Windows.Forms.Panel();
@@ -174,9 +178,9 @@
             this.PanelSubMenuGestionUsuario.Controls.Add(this.BtnRegistrarServicio);
             this.PanelSubMenuGestionUsuario.Controls.Add(this.BtnCambiarPassword);
             this.PanelSubMenuGestionUsuario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSubMenuGestionUsuario.Location = new System.Drawing.Point(0, 554);
+            this.PanelSubMenuGestionUsuario.Location = new System.Drawing.Point(0, 669);
             this.PanelSubMenuGestionUsuario.Name = "PanelSubMenuGestionUsuario";
-            this.PanelSubMenuGestionUsuario.Size = new System.Drawing.Size(230, 185);
+            this.PanelSubMenuGestionUsuario.Size = new System.Drawing.Size(230, 122);
             this.PanelSubMenuGestionUsuario.TabIndex = 6;
             // 
             // BtnVisualizarServicio
@@ -261,7 +265,7 @@
             this.BtnGestionUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGestionUsuario.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnGestionUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnGestionUsuario.Location = new System.Drawing.Point(0, 524);
+            this.BtnGestionUsuario.Location = new System.Drawing.Point(0, 639);
             this.BtnGestionUsuario.Name = "BtnGestionUsuario";
             this.BtnGestionUsuario.Size = new System.Drawing.Size(230, 30);
             this.BtnGestionUsuario.TabIndex = 3;
@@ -272,28 +276,138 @@
             // 
             // PanelSubMenuCliente
             // 
-            this.PanelSubMenuCliente.AutoSize = true;
             this.PanelSubMenuCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelSubMenuCliente.Controls.Add(this.BtnEliminarReserva);
+            this.PanelSubMenuCliente.Controls.Add(this.BtnEliminarCliente);
+            this.PanelSubMenuCliente.Controls.Add(this.BtnModificarReserva);
+            this.PanelSubMenuCliente.Controls.Add(this.BtnRegistrarReserva);
+            this.PanelSubMenuCliente.Controls.Add(this.BtnRegistrarClientes);
+            this.PanelSubMenuCliente.Controls.Add(this.BtnVisualizarReservas);
             this.PanelSubMenuCliente.Controls.Add(this.BtnModificarCliente);
-            this.PanelSubMenuCliente.Controls.Add(this.BtnGestionReservaCliente);
-            this.PanelSubMenuCliente.Controls.Add(this.BtnGestionCliente);
             this.PanelSubMenuCliente.Controls.Add(this.BtnVisualizacionClientes);
             this.PanelSubMenuCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSubMenuCliente.Location = new System.Drawing.Point(0, 404);
             this.PanelSubMenuCliente.Name = "PanelSubMenuCliente";
-            this.PanelSubMenuCliente.Size = new System.Drawing.Size(230, 120);
+            this.PanelSubMenuCliente.Size = new System.Drawing.Size(230, 235);
             this.PanelSubMenuCliente.TabIndex = 5;
+            // 
+            // BtnEliminarReserva
+            // 
+            this.BtnEliminarReserva.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnEliminarReserva.FlatAppearance.BorderSize = 0;
+            this.BtnEliminarReserva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnEliminarReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEliminarReserva.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnEliminarReserva.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BtnEliminarReserva.Location = new System.Drawing.Point(0, 205);
+            this.BtnEliminarReserva.Name = "BtnEliminarReserva";
+            this.BtnEliminarReserva.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnEliminarReserva.Size = new System.Drawing.Size(230, 30);
+            this.BtnEliminarReserva.TabIndex = 0;
+            this.BtnEliminarReserva.Text = "Eliminar Reserva";
+            this.BtnEliminarReserva.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BtnEliminarReserva.UseVisualStyleBackColor = false;
+            this.BtnEliminarReserva.Click += new System.EventHandler(this.BtnEliminarReserva_Click);
+            // 
+            // BtnEliminarCliente
+            // 
+            this.BtnEliminarCliente.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnEliminarCliente.FlatAppearance.BorderSize = 0;
+            this.BtnEliminarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnEliminarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEliminarCliente.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnEliminarCliente.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BtnEliminarCliente.Location = new System.Drawing.Point(0, 175);
+            this.BtnEliminarCliente.Name = "BtnEliminarCliente";
+            this.BtnEliminarCliente.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnEliminarCliente.Size = new System.Drawing.Size(230, 30);
+            this.BtnEliminarCliente.TabIndex = 0;
+            this.BtnEliminarCliente.Text = "Eliminar cliente";
+            this.BtnEliminarCliente.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BtnEliminarCliente.UseVisualStyleBackColor = false;
+            this.BtnEliminarCliente.Click += new System.EventHandler(this.BtnEliminarCliente_Click);
+            // 
+            // BtnModificarReserva
+            // 
+            this.BtnModificarReserva.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnModificarReserva.FlatAppearance.BorderSize = 0;
+            this.BtnModificarReserva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnModificarReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnModificarReserva.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnModificarReserva.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BtnModificarReserva.Location = new System.Drawing.Point(0, 145);
+            this.BtnModificarReserva.Name = "BtnModificarReserva";
+            this.BtnModificarReserva.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnModificarReserva.Size = new System.Drawing.Size(230, 30);
+            this.BtnModificarReserva.TabIndex = 0;
+            this.BtnModificarReserva.Text = "Modificar Reserva";
+            this.BtnModificarReserva.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BtnModificarReserva.UseVisualStyleBackColor = false;
+            this.BtnModificarReserva.Click += new System.EventHandler(this.BtnModificarReserva_Click);
+            // 
+            // BtnRegistrarReserva
+            // 
+            this.BtnRegistrarReserva.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnRegistrarReserva.FlatAppearance.BorderSize = 0;
+            this.BtnRegistrarReserva.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnRegistrarReserva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRegistrarReserva.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnRegistrarReserva.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BtnRegistrarReserva.Location = new System.Drawing.Point(0, 30);
+            this.BtnRegistrarReserva.Name = "BtnRegistrarReserva";
+            this.BtnRegistrarReserva.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnRegistrarReserva.Size = new System.Drawing.Size(230, 30);
+            this.BtnRegistrarReserva.TabIndex = 0;
+            this.BtnRegistrarReserva.Text = "Registrar Reserva";
+            this.BtnRegistrarReserva.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BtnRegistrarReserva.UseVisualStyleBackColor = false;
+            this.BtnRegistrarReserva.Click += new System.EventHandler(this.BtnRegistrarReserva_Click_1);
+            // 
+            // BtnRegistrarClientes
+            // 
+            this.BtnRegistrarClientes.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnRegistrarClientes.FlatAppearance.BorderSize = 0;
+            this.BtnRegistrarClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnRegistrarClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRegistrarClientes.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnRegistrarClientes.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BtnRegistrarClientes.Location = new System.Drawing.Point(0, 0);
+            this.BtnRegistrarClientes.Name = "BtnRegistrarClientes";
+            this.BtnRegistrarClientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnRegistrarClientes.Size = new System.Drawing.Size(230, 30);
+            this.BtnRegistrarClientes.TabIndex = 0;
+            this.BtnRegistrarClientes.Text = "Registrar Clientes";
+            this.BtnRegistrarClientes.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BtnRegistrarClientes.UseVisualStyleBackColor = false;
+            this.BtnRegistrarClientes.Click += new System.EventHandler(this.BtnRegistrarClientes_Click);
+            // 
+            // BtnVisualizarReservas
+            // 
+            this.BtnVisualizarReservas.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnVisualizarReservas.FlatAppearance.BorderSize = 0;
+            this.BtnVisualizarReservas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnVisualizarReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVisualizarReservas.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnVisualizarReservas.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BtnVisualizarReservas.Location = new System.Drawing.Point(0, 86);
+            this.BtnVisualizarReservas.Name = "BtnVisualizarReservas";
+            this.BtnVisualizarReservas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnVisualizarReservas.Size = new System.Drawing.Size(230, 30);
+            this.BtnVisualizarReservas.TabIndex = 0;
+            this.BtnVisualizarReservas.Text = "Visualizar Reservas";
+            this.BtnVisualizarReservas.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BtnVisualizarReservas.UseVisualStyleBackColor = false;
+            this.BtnVisualizarReservas.Click += new System.EventHandler(this.BtnVisualizarReservas_Click);
             // 
             // BtnModificarCliente
             // 
             this.BtnModificarCliente.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BtnModificarCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnModificarCliente.FlatAppearance.BorderSize = 0;
             this.BtnModificarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnModificarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificarCliente.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnModificarCliente.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnModificarCliente.Location = new System.Drawing.Point(0, 90);
+            this.BtnModificarCliente.Location = new System.Drawing.Point(0, 115);
             this.BtnModificarCliente.Name = "BtnModificarCliente";
             this.BtnModificarCliente.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.BtnModificarCliente.Size = new System.Drawing.Size(230, 30);
@@ -303,54 +417,15 @@
             this.BtnModificarCliente.UseVisualStyleBackColor = false;
             this.BtnModificarCliente.Click += new System.EventHandler(this.BtnModificarCliente_Click);
             // 
-            // BtnGestionReservaCliente
-            // 
-            this.BtnGestionReservaCliente.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BtnGestionReservaCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnGestionReservaCliente.FlatAppearance.BorderSize = 0;
-            this.BtnGestionReservaCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BtnGestionReservaCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGestionReservaCliente.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnGestionReservaCliente.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnGestionReservaCliente.Location = new System.Drawing.Point(0, 60);
-            this.BtnGestionReservaCliente.Name = "BtnGestionReservaCliente";
-            this.BtnGestionReservaCliente.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnGestionReservaCliente.Size = new System.Drawing.Size(230, 30);
-            this.BtnGestionReservaCliente.TabIndex = 0;
-            this.BtnGestionReservaCliente.Text = "Gestionar reservas";
-            this.BtnGestionReservaCliente.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BtnGestionReservaCliente.UseVisualStyleBackColor = false;
-            this.BtnGestionReservaCliente.Click += new System.EventHandler(this.BtnGestionReservaCliente_Click);
-            // 
-            // BtnGestionCliente
-            // 
-            this.BtnGestionCliente.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BtnGestionCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnGestionCliente.FlatAppearance.BorderSize = 0;
-            this.BtnGestionCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BtnGestionCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGestionCliente.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.BtnGestionCliente.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnGestionCliente.Location = new System.Drawing.Point(0, 30);
-            this.BtnGestionCliente.Name = "BtnGestionCliente";
-            this.BtnGestionCliente.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnGestionCliente.Size = new System.Drawing.Size(230, 30);
-            this.BtnGestionCliente.TabIndex = 0;
-            this.BtnGestionCliente.Text = "Gestion de clientes";
-            this.BtnGestionCliente.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.BtnGestionCliente.UseVisualStyleBackColor = false;
-            this.BtnGestionCliente.Click += new System.EventHandler(this.BtnGestionCliente_Click);
-            // 
             // BtnVisualizacionClientes
             // 
             this.BtnVisualizacionClientes.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BtnVisualizacionClientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnVisualizacionClientes.FlatAppearance.BorderSize = 0;
             this.BtnVisualizacionClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnVisualizacionClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVisualizacionClientes.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnVisualizacionClientes.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.BtnVisualizacionClientes.Location = new System.Drawing.Point(0, 0);
+            this.BtnVisualizacionClientes.Location = new System.Drawing.Point(0, 60);
             this.BtnVisualizacionClientes.Name = "BtnVisualizacionClientes";
             this.BtnVisualizacionClientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.BtnVisualizacionClientes.Size = new System.Drawing.Size(230, 30);
@@ -358,7 +433,7 @@
             this.BtnVisualizacionClientes.Text = "Visualizacion de clientes";
             this.BtnVisualizacionClientes.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.BtnVisualizacionClientes.UseVisualStyleBackColor = false;
-            this.BtnVisualizacionClientes.Click += new System.EventHandler(this.BtnVisualizacionClientes_Click);
+            this.BtnVisualizacionClientes.Click += new System.EventHandler(this.BtnVisualizacionClientes_Click_1);
             // 
             // BtnAdministrarClientes
             // 
@@ -551,7 +626,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.PanelSuperior.ResumeLayout(false);
             this.PanelIzquierdo.ResumeLayout(false);
-            this.PanelIzquierdo.PerformLayout();
             this.PanelSubMenuGestionUsuario.ResumeLayout(false);
             this.PanelSubMenuCliente.ResumeLayout(false);
             this.PanelSubMenuBarberos.ResumeLayout(false);
@@ -582,8 +656,6 @@
         private System.Windows.Forms.Button BtnAdministrarClientes;
         private System.Windows.Forms.PictureBox PicIconoBarberia;
         private System.Windows.Forms.Button BtnGestionUsuario;
-        private System.Windows.Forms.Button BtnGestionReservaCliente;
-        private System.Windows.Forms.Button BtnGestionCliente;
         private System.Windows.Forms.Panel PanelSubMenuGestionUsuario;
         private System.Windows.Forms.Button BtnCambiarPassword;
         private System.Windows.Forms.Panel PanelPrincipal;
@@ -592,5 +664,11 @@
         private System.Windows.Forms.Button BtnModificarCliente;
         private System.Windows.Forms.Button BtnModificarServicio;
         private System.Windows.Forms.Button BtnVisualizarServicio;
+        private System.Windows.Forms.Button BtnVisualizarReservas;
+        private System.Windows.Forms.Button BtnRegistrarClientes;
+        private System.Windows.Forms.Button BtnEliminarReserva;
+        private System.Windows.Forms.Button BtnEliminarCliente;
+        private System.Windows.Forms.Button BtnModificarReserva;
+        private System.Windows.Forms.Button BtnRegistrarReserva;
     }
 }
