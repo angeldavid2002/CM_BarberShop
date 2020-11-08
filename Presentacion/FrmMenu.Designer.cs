@@ -168,7 +168,7 @@
             this.PanelIzquierdo.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelIzquierdo.Location = new System.Drawing.Point(0, 50);
             this.PanelIzquierdo.Name = "PanelIzquierdo";
-            this.PanelIzquierdo.Size = new System.Drawing.Size(230, 950);
+            this.PanelIzquierdo.Size = new System.Drawing.Size(230, 650);
             this.PanelIzquierdo.TabIndex = 0;
             // 
             // PanelSubMenuGestionUsuario
@@ -180,7 +180,7 @@
             this.PanelSubMenuGestionUsuario.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSubMenuGestionUsuario.Location = new System.Drawing.Point(0, 669);
             this.PanelSubMenuGestionUsuario.Name = "PanelSubMenuGestionUsuario";
-            this.PanelSubMenuGestionUsuario.Size = new System.Drawing.Size(230, 122);
+            this.PanelSubMenuGestionUsuario.Size = new System.Drawing.Size(209, 122);
             this.PanelSubMenuGestionUsuario.TabIndex = 6;
             // 
             // BtnVisualizarServicio
@@ -194,7 +194,7 @@
             this.BtnVisualizarServicio.Location = new System.Drawing.Point(0, 90);
             this.BtnVisualizarServicio.Name = "BtnVisualizarServicio";
             this.BtnVisualizarServicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnVisualizarServicio.Size = new System.Drawing.Size(230, 30);
+            this.BtnVisualizarServicio.Size = new System.Drawing.Size(209, 30);
             this.BtnVisualizarServicio.TabIndex = 0;
             this.BtnVisualizarServicio.Text = "Visualizar Servicios";
             this.BtnVisualizarServicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -212,7 +212,7 @@
             this.BtnModificarServicio.Location = new System.Drawing.Point(0, 60);
             this.BtnModificarServicio.Name = "BtnModificarServicio";
             this.BtnModificarServicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnModificarServicio.Size = new System.Drawing.Size(230, 30);
+            this.BtnModificarServicio.Size = new System.Drawing.Size(209, 30);
             this.BtnModificarServicio.TabIndex = 0;
             this.BtnModificarServicio.Text = "Modificar Servicios";
             this.BtnModificarServicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -230,7 +230,7 @@
             this.BtnRegistrarServicio.Location = new System.Drawing.Point(0, 30);
             this.BtnRegistrarServicio.Name = "BtnRegistrarServicio";
             this.BtnRegistrarServicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnRegistrarServicio.Size = new System.Drawing.Size(230, 30);
+            this.BtnRegistrarServicio.Size = new System.Drawing.Size(209, 30);
             this.BtnRegistrarServicio.TabIndex = 0;
             this.BtnRegistrarServicio.Text = "Registrar Nuevos Servicios";
             this.BtnRegistrarServicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -248,7 +248,7 @@
             this.BtnCambiarPassword.Location = new System.Drawing.Point(0, 0);
             this.BtnCambiarPassword.Name = "BtnCambiarPassword";
             this.BtnCambiarPassword.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.BtnCambiarPassword.Size = new System.Drawing.Size(230, 30);
+            this.BtnCambiarPassword.Size = new System.Drawing.Size(209, 30);
             this.BtnCambiarPassword.TabIndex = 0;
             this.BtnCambiarPassword.Text = "Cambiar contraseña";
             this.BtnCambiarPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -267,7 +267,7 @@
             this.BtnGestionUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnGestionUsuario.Location = new System.Drawing.Point(0, 639);
             this.BtnGestionUsuario.Name = "BtnGestionUsuario";
-            this.BtnGestionUsuario.Size = new System.Drawing.Size(230, 30);
+            this.BtnGestionUsuario.Size = new System.Drawing.Size(209, 30);
             this.BtnGestionUsuario.TabIndex = 3;
             this.BtnGestionUsuario.Text = "Gestion de usuario";
             this.BtnGestionUsuario.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -288,7 +288,7 @@
             this.PanelSubMenuCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSubMenuCliente.Location = new System.Drawing.Point(0, 404);
             this.PanelSubMenuCliente.Name = "PanelSubMenuCliente";
-            this.PanelSubMenuCliente.Size = new System.Drawing.Size(230, 235);
+            this.PanelSubMenuCliente.Size = new System.Drawing.Size(209, 235);
             this.PanelSubMenuCliente.TabIndex = 5;
             // 
             // BtnEliminarReserva
@@ -447,7 +447,7 @@
             this.BtnAdministrarClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnAdministrarClientes.Location = new System.Drawing.Point(0, 374);
             this.BtnAdministrarClientes.Name = "BtnAdministrarClientes";
-            this.BtnAdministrarClientes.Size = new System.Drawing.Size(230, 30);
+            this.BtnAdministrarClientes.Size = new System.Drawing.Size(209, 30);
             this.BtnAdministrarClientes.TabIndex = 3;
             this.BtnAdministrarClientes.Text = "Administrar Clientes";
             this.BtnAdministrarClientes.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -465,7 +465,7 @@
             this.PanelSubMenuBarberos.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSubMenuBarberos.Location = new System.Drawing.Point(0, 230);
             this.PanelSubMenuBarberos.Name = "PanelSubMenuBarberos";
-            this.PanelSubMenuBarberos.Size = new System.Drawing.Size(230, 144);
+            this.PanelSubMenuBarberos.Size = new System.Drawing.Size(209, 144);
             this.PanelSubMenuBarberos.TabIndex = 4;
             // 
             // BtnModificarBarbero
@@ -571,7 +571,7 @@
             this.BtnAdministrarBarberos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnAdministrarBarberos.Location = new System.Drawing.Point(0, 200);
             this.BtnAdministrarBarberos.Name = "BtnAdministrarBarberos";
-            this.BtnAdministrarBarberos.Size = new System.Drawing.Size(230, 30);
+            this.BtnAdministrarBarberos.Size = new System.Drawing.Size(209, 30);
             this.BtnAdministrarBarberos.TabIndex = 3;
             this.BtnAdministrarBarberos.Text = "Administrar Barberos";
             this.BtnAdministrarBarberos.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -584,7 +584,7 @@
             this.SubPanelIzquierdoSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.SubPanelIzquierdoSuperior.Location = new System.Drawing.Point(0, 0);
             this.SubPanelIzquierdoSuperior.Name = "SubPanelIzquierdoSuperior";
-            this.SubPanelIzquierdoSuperior.Size = new System.Drawing.Size(230, 200);
+            this.SubPanelIzquierdoSuperior.Size = new System.Drawing.Size(209, 200);
             this.SubPanelIzquierdoSuperior.TabIndex = 2;
             // 
             // PicIconoBarberia
@@ -594,7 +594,7 @@
             this.PicIconoBarberia.Image = ((System.Drawing.Image)(resources.GetObject("PicIconoBarberia.Image")));
             this.PicIconoBarberia.Location = new System.Drawing.Point(0, 0);
             this.PicIconoBarberia.Name = "PicIconoBarberia";
-            this.PicIconoBarberia.Size = new System.Drawing.Size(230, 200);
+            this.PicIconoBarberia.Size = new System.Drawing.Size(209, 200);
             this.PicIconoBarberia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicIconoBarberia.TabIndex = 0;
             this.PicIconoBarberia.TabStop = false;
@@ -607,7 +607,7 @@
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPrincipal.Location = new System.Drawing.Point(230, 50);
             this.PanelPrincipal.Name = "PanelPrincipal";
-            this.PanelPrincipal.Size = new System.Drawing.Size(970, 950);
+            this.PanelPrincipal.Size = new System.Drawing.Size(970, 650);
             this.PanelPrincipal.TabIndex = 2;
             // 
             // FrmMenu
@@ -615,7 +615,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(1200, 1000);
+            this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.PanelPrincipal);
             this.Controls.Add(this.PanelIzquierdo);
             this.Controls.Add(this.PanelSuperior);
