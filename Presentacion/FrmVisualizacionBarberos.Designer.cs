@@ -97,9 +97,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(340, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(400, 10);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(265, 140);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -108,7 +108,7 @@
             // 
             this.BtnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.BtnBuscar.Location = new System.Drawing.Point(675, 195);
+            this.BtnBuscar.Location = new System.Drawing.Point(698, 114);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(94, 29);
             this.BtnBuscar.TabIndex = 6;
@@ -121,9 +121,9 @@
             this.PanelListaFiltro.AutoScroll = true;
             this.PanelListaFiltro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.PanelListaFiltro.Controls.Add(this.DtGridBarberosFiltrados);
-            this.PanelListaFiltro.Location = new System.Drawing.Point(35, 243);
+            this.PanelListaFiltro.Location = new System.Drawing.Point(30, 210);
             this.PanelListaFiltro.Name = "PanelListaFiltro";
-            this.PanelListaFiltro.Size = new System.Drawing.Size(824, 389);
+            this.PanelListaFiltro.Size = new System.Drawing.Size(840, 425);
             this.PanelListaFiltro.TabIndex = 5;
             // 
             // DtGridBarberosFiltrados
@@ -141,7 +141,7 @@
             this.DtGridBarberosFiltrados.Location = new System.Drawing.Point(0, 0);
             this.DtGridBarberosFiltrados.Name = "DtGridBarberosFiltrados";
             this.DtGridBarberosFiltrados.RowHeadersWidth = 51;
-            this.DtGridBarberosFiltrados.Size = new System.Drawing.Size(824, 389);
+            this.DtGridBarberosFiltrados.Size = new System.Drawing.Size(840, 425);
             this.DtGridBarberosFiltrados.TabIndex = 4;
             this.DtGridBarberosFiltrados.Text = "dataGridView1";
             // 
@@ -199,7 +199,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(141, 203);
+            this.label2.Location = new System.Drawing.Point(72, 168);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 3;
@@ -214,18 +214,18 @@
             "consultar barbero por id",
             "consultar todos",
             "consultar por nombre"});
-            this.CmbTipoFiltro.Location = new System.Drawing.Point(243, 195);
+            this.CmbTipoFiltro.Location = new System.Drawing.Point(174, 160);
             this.CmbTipoFiltro.Name = "CmbTipoFiltro";
-            this.CmbTipoFiltro.Size = new System.Drawing.Size(426, 28);
+            this.CmbTipoFiltro.Size = new System.Drawing.Size(518, 28);
             this.CmbTipoFiltro.TabIndex = 1;
             this.CmbTipoFiltro.SelectedIndexChanged += new System.EventHandler(this.CmbTipoFiltro_SelectedIndexChanged);
             // 
             // TxtIdConsulta
             // 
             this.TxtIdConsulta.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TxtIdConsulta.Location = new System.Drawing.Point(243, 152);
+            this.TxtIdConsulta.Location = new System.Drawing.Point(174, 116);
             this.TxtIdConsulta.Name = "TxtIdConsulta";
-            this.TxtIdConsulta.Size = new System.Drawing.Size(426, 27);
+            this.TxtIdConsulta.Size = new System.Drawing.Size(518, 27);
             this.TxtIdConsulta.TabIndex = 0;
             // 
             // FrmVisualizacionBarberos

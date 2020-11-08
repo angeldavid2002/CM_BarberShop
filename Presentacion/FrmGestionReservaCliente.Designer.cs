@@ -174,9 +174,8 @@
             // 
             // BtnRegistrar
             // 
-            this.BtnRegistrar.BackColor = System.Drawing.Color.LightGray;
+            this.BtnRegistrar.BackColor = System.Drawing.Color.Transparent;
             this.BtnRegistrar.FlatAppearance.BorderSize = 0;
-            this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrar.ForeColor = System.Drawing.Color.Black;
             this.BtnRegistrar.Location = new System.Drawing.Point(425, 284);
             this.BtnRegistrar.Name = "BtnRegistrar";

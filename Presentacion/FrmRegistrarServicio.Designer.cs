@@ -123,10 +123,9 @@
             // 
             // BtnRegistrar
             // 
-            this.BtnRegistrar.BackColor = System.Drawing.Color.LightGray;
+            this.BtnRegistrar.BackColor = System.Drawing.Color.Transparent;
             this.BtnRegistrar.FlatAppearance.BorderSize = 0;
             this.BtnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrar.Location = new System.Drawing.Point(646, 360);
             this.BtnRegistrar.Name = "BtnRegistrar";
             this.BtnRegistrar.Size = new System.Drawing.Size(94, 29);

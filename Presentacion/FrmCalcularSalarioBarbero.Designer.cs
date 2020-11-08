@@ -148,10 +148,9 @@
             // BtnCalcularSalario
             // 
             this.BtnCalcularSalario.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BtnCalcularSalario.BackColor = System.Drawing.Color.LightGray;
+            this.BtnCalcularSalario.BackColor = System.Drawing.Color.Transparent;
             this.BtnCalcularSalario.FlatAppearance.BorderSize = 0;
             this.BtnCalcularSalario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(100)))), ((int)(((byte)(255)))));
-            this.BtnCalcularSalario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCalcularSalario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtnCalcularSalario.Location = new System.Drawing.Point(643, 73);
             this.BtnCalcularSalario.Name = "BtnCalcularSalario";

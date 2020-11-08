@@ -95,9 +95,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(409, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(400, 10);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 108);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -105,9 +105,9 @@
             // PanelFiltro
             // 
             this.PanelFiltro.Controls.Add(this.DtGridView);
-            this.PanelFiltro.Location = new System.Drawing.Point(30, 209);
+            this.PanelFiltro.Location = new System.Drawing.Point(30, 210);
             this.PanelFiltro.Name = "PanelFiltro";
-            this.PanelFiltro.Size = new System.Drawing.Size(837, 423);
+            this.PanelFiltro.Size = new System.Drawing.Size(840, 425);
             this.PanelFiltro.TabIndex = 4;
             // 
             // DtGridView
@@ -125,7 +125,7 @@
             this.DtGridView.Location = new System.Drawing.Point(0, 0);
             this.DtGridView.Name = "DtGridView";
             this.DtGridView.RowHeadersWidth = 51;
-            this.DtGridView.Size = new System.Drawing.Size(837, 423);
+            this.DtGridView.Size = new System.Drawing.Size(840, 425);
             this.DtGridView.TabIndex = 0;
             this.DtGridView.Text = "dataGridView1";
             // 
@@ -172,7 +172,8 @@
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(708, 165);
+            this.BtnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.BtnBuscar.Location = new System.Drawing.Point(708, 120);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(94, 29);
             this.BtnBuscar.TabIndex = 3;
@@ -182,6 +183,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(73, 173);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 20);
