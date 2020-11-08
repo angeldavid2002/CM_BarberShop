@@ -195,5 +195,15 @@ namespace Presentacion
             this.PanelPrincipal.Tag = form;
             form.Show();
         }
+
+        private void BtnModificarBarbero_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmModificarBarbero form = new FrmModificarBarbero();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
     }
 }

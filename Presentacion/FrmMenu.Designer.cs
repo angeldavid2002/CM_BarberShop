@@ -45,6 +45,7 @@
             this.BtnVisualizacionClientes = new System.Windows.Forms.Button();
             this.BtnAdministrarClientes = new System.Windows.Forms.Button();
             this.PanelSubMenuBarberos = new System.Windows.Forms.Panel();
+            this.BtnModificarBarbero = new System.Windows.Forms.Button();
             this.BtnEliminarBarbero = new System.Windows.Forms.Button();
             this.BtnRegistrarBarbero = new System.Windows.Forms.Button();
             this.BtnVisualizacionBarberos = new System.Windows.Forms.Button();
@@ -168,7 +169,7 @@
             this.PanelSubMenuGestionUsuario.Controls.Add(this.BtnRegistrarServicio);
             this.PanelSubMenuGestionUsuario.Controls.Add(this.BtnCambiarPassword);
             this.PanelSubMenuGestionUsuario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSubMenuGestionUsuario.Location = new System.Drawing.Point(0, 500);
+            this.PanelSubMenuGestionUsuario.Location = new System.Drawing.Point(0, 524);
             this.PanelSubMenuGestionUsuario.Name = "PanelSubMenuGestionUsuario";
             this.PanelSubMenuGestionUsuario.Size = new System.Drawing.Size(230, 63);
             this.PanelSubMenuGestionUsuario.TabIndex = 6;
@@ -219,7 +220,7 @@
             this.BtnGestionUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGestionUsuario.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnGestionUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnGestionUsuario.Location = new System.Drawing.Point(0, 470);
+            this.BtnGestionUsuario.Location = new System.Drawing.Point(0, 494);
             this.BtnGestionUsuario.Name = "BtnGestionUsuario";
             this.BtnGestionUsuario.Size = new System.Drawing.Size(230, 30);
             this.BtnGestionUsuario.TabIndex = 3;
@@ -235,7 +236,7 @@
             this.PanelSubMenuCliente.Controls.Add(this.BtnGestionCliente);
             this.PanelSubMenuCliente.Controls.Add(this.BtnVisualizacionClientes);
             this.PanelSubMenuCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSubMenuCliente.Location = new System.Drawing.Point(0, 380);
+            this.PanelSubMenuCliente.Location = new System.Drawing.Point(0, 404);
             this.PanelSubMenuCliente.Name = "PanelSubMenuCliente";
             this.PanelSubMenuCliente.Size = new System.Drawing.Size(230, 90);
             this.PanelSubMenuCliente.TabIndex = 5;
@@ -307,7 +308,7 @@
             this.BtnAdministrarClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAdministrarClientes.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnAdministrarClientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnAdministrarClientes.Location = new System.Drawing.Point(0, 350);
+            this.BtnAdministrarClientes.Location = new System.Drawing.Point(0, 374);
             this.BtnAdministrarClientes.Name = "BtnAdministrarClientes";
             this.BtnAdministrarClientes.Size = new System.Drawing.Size(230, 30);
             this.BtnAdministrarClientes.TabIndex = 3;
@@ -319,6 +320,7 @@
             // PanelSubMenuBarberos
             // 
             this.PanelSubMenuBarberos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelSubMenuBarberos.Controls.Add(this.BtnModificarBarbero);
             this.PanelSubMenuBarberos.Controls.Add(this.BtnEliminarBarbero);
             this.PanelSubMenuBarberos.Controls.Add(this.BtnRegistrarBarbero);
             this.PanelSubMenuBarberos.Controls.Add(this.BtnVisualizacionBarberos);
@@ -326,19 +328,36 @@
             this.PanelSubMenuBarberos.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSubMenuBarberos.Location = new System.Drawing.Point(0, 230);
             this.PanelSubMenuBarberos.Name = "PanelSubMenuBarberos";
-            this.PanelSubMenuBarberos.Size = new System.Drawing.Size(230, 120);
+            this.PanelSubMenuBarberos.Size = new System.Drawing.Size(230, 144);
             this.PanelSubMenuBarberos.TabIndex = 4;
+            // 
+            // BtnModificarBarbero
+            // 
+            this.BtnModificarBarbero.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnModificarBarbero.FlatAppearance.BorderSize = 0;
+            this.BtnModificarBarbero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnModificarBarbero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnModificarBarbero.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnModificarBarbero.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnModificarBarbero.Location = new System.Drawing.Point(0, 87);
+            this.BtnModificarBarbero.Name = "BtnModificarBarbero";
+            this.BtnModificarBarbero.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.BtnModificarBarbero.Size = new System.Drawing.Size(230, 30);
+            this.BtnModificarBarbero.TabIndex = 3;
+            this.BtnModificarBarbero.Text = "Modificar Barbero";
+            this.BtnModificarBarbero.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BtnModificarBarbero.UseVisualStyleBackColor = false;
+            this.BtnModificarBarbero.Click += new System.EventHandler(this.BtnModificarBarbero_Click);
             // 
             // BtnEliminarBarbero
             // 
             this.BtnEliminarBarbero.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BtnEliminarBarbero.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnEliminarBarbero.FlatAppearance.BorderSize = 0;
             this.BtnEliminarBarbero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnEliminarBarbero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEliminarBarbero.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnEliminarBarbero.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnEliminarBarbero.Location = new System.Drawing.Point(0, 90);
+            this.BtnEliminarBarbero.Location = new System.Drawing.Point(0, 57);
             this.BtnEliminarBarbero.Name = "BtnEliminarBarbero";
             this.BtnEliminarBarbero.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.BtnEliminarBarbero.Size = new System.Drawing.Size(230, 30);
@@ -351,13 +370,12 @@
             // BtnRegistrarBarbero
             // 
             this.BtnRegistrarBarbero.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BtnRegistrarBarbero.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnRegistrarBarbero.FlatAppearance.BorderSize = 0;
             this.BtnRegistrarBarbero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnRegistrarBarbero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrarBarbero.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnRegistrarBarbero.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnRegistrarBarbero.Location = new System.Drawing.Point(0, 60);
+            this.BtnRegistrarBarbero.Location = new System.Drawing.Point(0, 0);
             this.BtnRegistrarBarbero.Name = "BtnRegistrarBarbero";
             this.BtnRegistrarBarbero.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.BtnRegistrarBarbero.Size = new System.Drawing.Size(230, 30);
@@ -370,13 +388,12 @@
             // BtnVisualizacionBarberos
             // 
             this.BtnVisualizacionBarberos.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BtnVisualizacionBarberos.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnVisualizacionBarberos.FlatAppearance.BorderSize = 0;
             this.BtnVisualizacionBarberos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnVisualizacionBarberos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVisualizacionBarberos.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnVisualizacionBarberos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnVisualizacionBarberos.Location = new System.Drawing.Point(0, 30);
+            this.BtnVisualizacionBarberos.Location = new System.Drawing.Point(0, 27);
             this.BtnVisualizacionBarberos.Name = "BtnVisualizacionBarberos";
             this.BtnVisualizacionBarberos.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.BtnVisualizacionBarberos.Size = new System.Drawing.Size(230, 30);
@@ -390,13 +407,12 @@
             // 
             this.BtnCalcularSalarioBarbero.AutoSize = true;
             this.BtnCalcularSalarioBarbero.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BtnCalcularSalarioBarbero.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnCalcularSalarioBarbero.FlatAppearance.BorderSize = 0;
             this.BtnCalcularSalarioBarbero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnCalcularSalarioBarbero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCalcularSalarioBarbero.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnCalcularSalarioBarbero.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnCalcularSalarioBarbero.Location = new System.Drawing.Point(0, 0);
+            this.BtnCalcularSalarioBarbero.Location = new System.Drawing.Point(0, 117);
             this.BtnCalcularSalarioBarbero.Name = "BtnCalcularSalarioBarbero";
             this.BtnCalcularSalarioBarbero.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.BtnCalcularSalarioBarbero.Size = new System.Drawing.Size(230, 30);
@@ -509,5 +525,6 @@
         private System.Windows.Forms.Button BtnCambiarPassword;
         private System.Windows.Forms.Panel PanelPrincipal;
         private System.Windows.Forms.Button BtnRegistrarServicio;
+        private System.Windows.Forms.Button BtnModificarBarbero;
     }
 }
