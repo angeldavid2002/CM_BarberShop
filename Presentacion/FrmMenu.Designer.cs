@@ -36,10 +36,13 @@
             this.BtnMinimizar = new System.Windows.Forms.Button();
             this.PanelIzquierdo = new System.Windows.Forms.Panel();
             this.PanelSubMenuGestionUsuario = new System.Windows.Forms.Panel();
+            this.BtnVisualizarServicio = new System.Windows.Forms.Button();
+            this.BtnModificarServicio = new System.Windows.Forms.Button();
             this.BtnRegistrarServicio = new System.Windows.Forms.Button();
             this.BtnCambiarPassword = new System.Windows.Forms.Button();
             this.BtnGestionUsuario = new System.Windows.Forms.Button();
             this.PanelSubMenuCliente = new System.Windows.Forms.Panel();
+            this.BtnModificarCliente = new System.Windows.Forms.Button();
             this.BtnGestionReservaCliente = new System.Windows.Forms.Button();
             this.BtnGestionCliente = new System.Windows.Forms.Button();
             this.BtnVisualizacionClientes = new System.Windows.Forms.Button();
@@ -161,18 +164,56 @@
             this.PanelIzquierdo.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelIzquierdo.Location = new System.Drawing.Point(0, 50);
             this.PanelIzquierdo.Name = "PanelIzquierdo";
-            this.PanelIzquierdo.Size = new System.Drawing.Size(230, 650);
+            this.PanelIzquierdo.Size = new System.Drawing.Size(230, 950);
             this.PanelIzquierdo.TabIndex = 0;
             // 
             // PanelSubMenuGestionUsuario
             // 
+            this.PanelSubMenuGestionUsuario.Controls.Add(this.BtnVisualizarServicio);
+            this.PanelSubMenuGestionUsuario.Controls.Add(this.BtnModificarServicio);
             this.PanelSubMenuGestionUsuario.Controls.Add(this.BtnRegistrarServicio);
             this.PanelSubMenuGestionUsuario.Controls.Add(this.BtnCambiarPassword);
             this.PanelSubMenuGestionUsuario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSubMenuGestionUsuario.Location = new System.Drawing.Point(0, 524);
+            this.PanelSubMenuGestionUsuario.Location = new System.Drawing.Point(0, 554);
             this.PanelSubMenuGestionUsuario.Name = "PanelSubMenuGestionUsuario";
-            this.PanelSubMenuGestionUsuario.Size = new System.Drawing.Size(230, 63);
+            this.PanelSubMenuGestionUsuario.Size = new System.Drawing.Size(230, 185);
             this.PanelSubMenuGestionUsuario.TabIndex = 6;
+            // 
+            // BtnVisualizarServicio
+            // 
+            this.BtnVisualizarServicio.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnVisualizarServicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnVisualizarServicio.FlatAppearance.BorderSize = 0;
+            this.BtnVisualizarServicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnVisualizarServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVisualizarServicio.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnVisualizarServicio.Location = new System.Drawing.Point(0, 90);
+            this.BtnVisualizarServicio.Name = "BtnVisualizarServicio";
+            this.BtnVisualizarServicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnVisualizarServicio.Size = new System.Drawing.Size(230, 30);
+            this.BtnVisualizarServicio.TabIndex = 0;
+            this.BtnVisualizarServicio.Text = "Visualizar Servicios";
+            this.BtnVisualizarServicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnVisualizarServicio.UseVisualStyleBackColor = false;
+            this.BtnVisualizarServicio.Click += new System.EventHandler(this.BtnVisualizarServicio_Click);
+            // 
+            // BtnModificarServicio
+            // 
+            this.BtnModificarServicio.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnModificarServicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnModificarServicio.FlatAppearance.BorderSize = 0;
+            this.BtnModificarServicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnModificarServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnModificarServicio.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnModificarServicio.Location = new System.Drawing.Point(0, 60);
+            this.BtnModificarServicio.Name = "BtnModificarServicio";
+            this.BtnModificarServicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnModificarServicio.Size = new System.Drawing.Size(230, 30);
+            this.BtnModificarServicio.TabIndex = 0;
+            this.BtnModificarServicio.Text = "Modificar Servicios";
+            this.BtnModificarServicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnModificarServicio.UseVisualStyleBackColor = false;
+            this.BtnModificarServicio.Click += new System.EventHandler(this.BtnModificarServicio_Click);
             // 
             // BtnRegistrarServicio
             // 
@@ -220,7 +261,7 @@
             this.BtnGestionUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGestionUsuario.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.BtnGestionUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnGestionUsuario.Location = new System.Drawing.Point(0, 494);
+            this.BtnGestionUsuario.Location = new System.Drawing.Point(0, 524);
             this.BtnGestionUsuario.Name = "BtnGestionUsuario";
             this.BtnGestionUsuario.Size = new System.Drawing.Size(230, 30);
             this.BtnGestionUsuario.TabIndex = 3;
@@ -231,15 +272,36 @@
             // 
             // PanelSubMenuCliente
             // 
+            this.PanelSubMenuCliente.AutoSize = true;
             this.PanelSubMenuCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelSubMenuCliente.Controls.Add(this.BtnModificarCliente);
             this.PanelSubMenuCliente.Controls.Add(this.BtnGestionReservaCliente);
             this.PanelSubMenuCliente.Controls.Add(this.BtnGestionCliente);
             this.PanelSubMenuCliente.Controls.Add(this.BtnVisualizacionClientes);
             this.PanelSubMenuCliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSubMenuCliente.Location = new System.Drawing.Point(0, 404);
             this.PanelSubMenuCliente.Name = "PanelSubMenuCliente";
-            this.PanelSubMenuCliente.Size = new System.Drawing.Size(230, 90);
+            this.PanelSubMenuCliente.Size = new System.Drawing.Size(230, 120);
             this.PanelSubMenuCliente.TabIndex = 5;
+            // 
+            // BtnModificarCliente
+            // 
+            this.BtnModificarCliente.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BtnModificarCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnModificarCliente.FlatAppearance.BorderSize = 0;
+            this.BtnModificarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BtnModificarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnModificarCliente.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnModificarCliente.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.BtnModificarCliente.Location = new System.Drawing.Point(0, 90);
+            this.BtnModificarCliente.Name = "BtnModificarCliente";
+            this.BtnModificarCliente.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.BtnModificarCliente.Size = new System.Drawing.Size(230, 30);
+            this.BtnModificarCliente.TabIndex = 0;
+            this.BtnModificarCliente.Text = "Modificar Cliente";
+            this.BtnModificarCliente.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.BtnModificarCliente.UseVisualStyleBackColor = false;
+            this.BtnModificarCliente.Click += new System.EventHandler(this.BtnModificarCliente_Click);
             // 
             // BtnGestionReservaCliente
             // 
@@ -470,7 +532,7 @@
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPrincipal.Location = new System.Drawing.Point(230, 50);
             this.PanelPrincipal.Name = "PanelPrincipal";
-            this.PanelPrincipal.Size = new System.Drawing.Size(970, 650);
+            this.PanelPrincipal.Size = new System.Drawing.Size(970, 950);
             this.PanelPrincipal.TabIndex = 2;
             // 
             // FrmMenu
@@ -478,7 +540,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.ClientSize = new System.Drawing.Size(1200, 1000);
             this.Controls.Add(this.PanelPrincipal);
             this.Controls.Add(this.PanelIzquierdo);
             this.Controls.Add(this.PanelSuperior);
@@ -489,6 +551,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.PanelSuperior.ResumeLayout(false);
             this.PanelIzquierdo.ResumeLayout(false);
+            this.PanelIzquierdo.PerformLayout();
             this.PanelSubMenuGestionUsuario.ResumeLayout(false);
             this.PanelSubMenuCliente.ResumeLayout(false);
             this.PanelSubMenuBarberos.ResumeLayout(false);
@@ -526,5 +589,8 @@
         private System.Windows.Forms.Panel PanelPrincipal;
         private System.Windows.Forms.Button BtnRegistrarServicio;
         private System.Windows.Forms.Button BtnModificarBarbero;
+        private System.Windows.Forms.Button BtnModificarCliente;
+        private System.Windows.Forms.Button BtnModificarServicio;
+        private System.Windows.Forms.Button BtnVisualizarServicio;
     }
 }

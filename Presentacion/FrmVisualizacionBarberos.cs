@@ -50,13 +50,13 @@ namespace Presentacion
         }
         private void HabilitarSeleccion(string id_filtro)
         {
-            if (id_filtro== "consultar barbero por id")
+            if (id_filtro== "Consultar Por ID Barbero")
             {
                 TxtIdConsulta.Enabled = true;
-            }else if (id_filtro=="consultar todos")
+            }else if (id_filtro=="Consultar Todos")
             {
                 TxtIdConsulta.Enabled = false;
-            }else if (id_filtro=="consultar por nombre")
+            }else if (id_filtro=="Consultar Por Nombre")
             {
                 TxtIdConsulta.Enabled = true;
             }

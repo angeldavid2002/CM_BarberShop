@@ -108,7 +108,7 @@
             // 
             this.BtnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.BtnBuscar.Location = new System.Drawing.Point(698, 114);
+            this.BtnBuscar.Location = new System.Drawing.Point(704, 120);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(94, 29);
             this.BtnBuscar.TabIndex = 6;
@@ -199,7 +199,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(72, 168);
+            this.label2.Location = new System.Drawing.Point(78, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 3;
@@ -211,10 +211,10 @@
             this.CmbTipoFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbTipoFiltro.FormattingEnabled = true;
             this.CmbTipoFiltro.Items.AddRange(new object[] {
-            "consultar barbero por id",
-            "consultar todos",
-            "consultar por nombre"});
-            this.CmbTipoFiltro.Location = new System.Drawing.Point(174, 160);
+            "Consultar Por ID Barbero",
+            "Consultar Todos",
+            "Consultar Por Nombre"});
+            this.CmbTipoFiltro.Location = new System.Drawing.Point(180, 153);
             this.CmbTipoFiltro.Name = "CmbTipoFiltro";
             this.CmbTipoFiltro.Size = new System.Drawing.Size(518, 28);
             this.CmbTipoFiltro.TabIndex = 1;
@@ -223,7 +223,7 @@
             // TxtIdConsulta
             // 
             this.TxtIdConsulta.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TxtIdConsulta.Location = new System.Drawing.Point(174, 116);
+            this.TxtIdConsulta.Location = new System.Drawing.Point(180, 120);
             this.TxtIdConsulta.Name = "TxtIdConsulta";
             this.TxtIdConsulta.Size = new System.Drawing.Size(518, 27);
             this.TxtIdConsulta.TabIndex = 0;

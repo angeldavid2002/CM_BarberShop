@@ -148,7 +148,7 @@ namespace Presentacion
 
         private void BtnGestionReservaCliente_Click(object sender, EventArgs e)
         {
-            LimpiarPanel();
+           LimpiarPanel();
             FrmGestionReservaCliente form = new FrmGestionReservaCliente();
             form.TopLevel = false;
             this.PanelPrincipal.Controls.Add(form);
@@ -186,20 +186,50 @@ namespace Presentacion
             form.Show();
         }
 
-        private void BtnRegistrarServicio_Click(object sender, EventArgs e)
+        private void BtnModificarBarbero_Click(object sender, EventArgs e)
         {
             LimpiarPanel();
-            FrmRegistrarServicio form = new FrmRegistrarServicio();
+            FrmModificarBarbero form = new FrmModificarBarbero();
             form.TopLevel = false;
             this.PanelPrincipal.Controls.Add(form);
             this.PanelPrincipal.Tag = form;
             form.Show();
         }
 
-        private void BtnModificarBarbero_Click(object sender, EventArgs e)
+        private void BtnModificarCliente_Click(object sender, EventArgs e)
         {
             LimpiarPanel();
-            FrmModificarBarbero form = new FrmModificarBarbero();
+            FrmModificarCliente form = new FrmModificarCliente();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
+
+        private void BtnModificarServicio_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmModificarServicio form = new FrmModificarServicio();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
+
+        private void BtnVisualizarServicio_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmVisualizarServicios form = new FrmVisualizarServicios();
+            form.TopLevel = false;
+            this.PanelPrincipal.Controls.Add(form);
+            this.PanelPrincipal.Tag = form;
+            form.Show();
+        }
+
+        private void BtnRegistrarServicio_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmRegistrarServicio form = new FrmRegistrarServicio();
             form.TopLevel = false;
             this.PanelPrincipal.Controls.Add(form);
             this.PanelPrincipal.Tag = form;

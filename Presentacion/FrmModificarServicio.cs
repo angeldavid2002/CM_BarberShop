@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class FrmVisualizarClientes : Form
+    public partial class FrmModificarServicio : Form
     {
-        public FrmVisualizarClientes()
+        public FrmModificarServicio()
         {
             InitializeComponent();
         }
 
-        private void BtnCerrar_Click(object sender, EventArgs e)
+        private void BtnSalir_Click(object sender, EventArgs e)
         {
             Close();
         }
@@ -29,11 +29,6 @@ namespace Presentacion
         {
             ReleaseCapture();
             SendMenssage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void BtnBuscar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

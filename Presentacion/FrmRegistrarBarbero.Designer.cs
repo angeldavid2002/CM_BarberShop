@@ -33,12 +33,12 @@
             this.BtnSalir = new System.Windows.Forms.Button();
             this.PanelPrincipal = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtNombre = new System.Windows.Forms.TextBox();
+            this.TxtApellido = new System.Windows.Forms.TextBox();
+            this.TxtIdentificacion = new System.Windows.Forms.TextBox();
+            this.TxtDireccion = new System.Windows.Forms.TextBox();
+            this.TxtTelefono = new System.Windows.Forms.TextBox();
+            this.TxtEdad = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -83,12 +83,12 @@
             // 
             this.PanelPrincipal.BackColor = System.Drawing.Color.LightSkyBlue;
             this.PanelPrincipal.Controls.Add(this.pictureBox1);
-            this.PanelPrincipal.Controls.Add(this.textBox6);
-            this.PanelPrincipal.Controls.Add(this.textBox5);
-            this.PanelPrincipal.Controls.Add(this.textBox4);
-            this.PanelPrincipal.Controls.Add(this.textBox3);
-            this.PanelPrincipal.Controls.Add(this.textBox2);
-            this.PanelPrincipal.Controls.Add(this.textBox1);
+            this.PanelPrincipal.Controls.Add(this.TxtNombre);
+            this.PanelPrincipal.Controls.Add(this.TxtApellido);
+            this.PanelPrincipal.Controls.Add(this.TxtIdentificacion);
+            this.PanelPrincipal.Controls.Add(this.TxtDireccion);
+            this.PanelPrincipal.Controls.Add(this.TxtTelefono);
+            this.PanelPrincipal.Controls.Add(this.TxtEdad);
             this.PanelPrincipal.Controls.Add(this.label7);
             this.PanelPrincipal.Controls.Add(this.label6);
             this.PanelPrincipal.Controls.Add(this.label5);
@@ -113,65 +113,65 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox6
+            // TxtNombre
             // 
-            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox6.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox6.Location = new System.Drawing.Point(161, 86);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(250, 30);
-            this.textBox6.TabIndex = 0;
+            this.TxtNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxtNombre.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtNombre.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.TxtNombre.Location = new System.Drawing.Point(161, 86);
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(250, 30);
+            this.TxtNombre.TabIndex = 0;
             // 
-            // textBox5
+            // TxtApellido
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox5.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox5.Location = new System.Drawing.Point(161, 142);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(250, 30);
-            this.textBox5.TabIndex = 1;
+            this.TxtApellido.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxtApellido.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtApellido.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.TxtApellido.Location = new System.Drawing.Point(161, 142);
+            this.TxtApellido.Name = "TxtApellido";
+            this.TxtApellido.Size = new System.Drawing.Size(250, 30);
+            this.TxtApellido.TabIndex = 1;
             // 
-            // textBox4
+            // TxtIdentificacion
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox4.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox4.Location = new System.Drawing.Point(161, 32);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(250, 30);
-            this.textBox4.TabIndex = 2;
+            this.TxtIdentificacion.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.TxtIdentificacion.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtIdentificacion.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.TxtIdentificacion.Location = new System.Drawing.Point(161, 32);
+            this.TxtIdentificacion.Name = "TxtIdentificacion";
+            this.TxtIdentificacion.Size = new System.Drawing.Size(250, 30);
+            this.TxtIdentificacion.TabIndex = 2;
             // 
-            // textBox3
+            // TxtDireccion
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox3.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox3.Location = new System.Drawing.Point(611, 142);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(250, 30);
-            this.textBox3.TabIndex = 3;
+            this.TxtDireccion.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.TxtDireccion.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtDireccion.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.TxtDireccion.Location = new System.Drawing.Point(611, 142);
+            this.TxtDireccion.Name = "TxtDireccion";
+            this.TxtDireccion.Size = new System.Drawing.Size(250, 30);
+            this.TxtDireccion.TabIndex = 3;
             // 
-            // textBox2
+            // TxtTelefono
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox2.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox2.Location = new System.Drawing.Point(611, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 30);
-            this.textBox2.TabIndex = 4;
+            this.TxtTelefono.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.TxtTelefono.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtTelefono.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.TxtTelefono.Location = new System.Drawing.Point(611, 32);
+            this.TxtTelefono.Name = "TxtTelefono";
+            this.TxtTelefono.Size = new System.Drawing.Size(250, 30);
+            this.TxtTelefono.TabIndex = 4;
             // 
-            // textBox1
+            // TxtEdad
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox1.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(611, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 30);
-            this.textBox1.TabIndex = 5;
+            this.TxtEdad.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.TxtEdad.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtEdad.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.TxtEdad.Location = new System.Drawing.Point(611, 86);
+            this.TxtEdad.Name = "TxtEdad";
+            this.TxtEdad.Size = new System.Drawing.Size(250, 30);
+            this.TxtEdad.TabIndex = 5;
             // 
             // label7
             // 
@@ -266,7 +266,6 @@
             this.BtnRegistrar.BackColor = System.Drawing.Color.Transparent;
             this.BtnRegistrar.FlatAppearance.BorderSize = 0;
             this.BtnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(130)))), ((int)(((byte)(255)))));
-            this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrar.ForeColor = System.Drawing.SystemColors.Desktop;
             this.BtnRegistrar.Location = new System.Drawing.Point(403, 255);
             this.BtnRegistrar.Name = "BtnRegistrar";
@@ -300,12 +299,12 @@
         private System.Windows.Forms.Panel PanelSuperior;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Panel PanelPrincipal;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtNombre;
+        private System.Windows.Forms.TextBox TxtApellido;
+        private System.Windows.Forms.TextBox TxtIdentificacion;
+        private System.Windows.Forms.TextBox TxtDireccion;
+        private System.Windows.Forms.TextBox TxtTelefono;
+        private System.Windows.Forms.TextBox TxtEdad;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

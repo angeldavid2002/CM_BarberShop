@@ -44,7 +44,7 @@
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.CmbTipoFiltro = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtIdConsulta = new System.Windows.Forms.TextBox();
             this.PanelSuperior.SuspendLayout();
             this.PanelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,7 +85,7 @@
             this.PanelPrincipal.Controls.Add(this.BtnBuscar);
             this.PanelPrincipal.Controls.Add(this.label1);
             this.PanelPrincipal.Controls.Add(this.CmbTipoFiltro);
-            this.PanelPrincipal.Controls.Add(this.textBox1);
+            this.PanelPrincipal.Controls.Add(this.TxtIdConsulta);
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPrincipal.Location = new System.Drawing.Point(0, 40);
             this.PanelPrincipal.Name = "PanelPrincipal";
@@ -113,6 +113,7 @@
             // DtGridView
             // 
             this.DtGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DtGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DtGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nombre,
@@ -173,18 +174,19 @@
             // BtnBuscar
             // 
             this.BtnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.BtnBuscar.Location = new System.Drawing.Point(708, 120);
+            this.BtnBuscar.Location = new System.Drawing.Point(704, 119);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(94, 29);
             this.BtnBuscar.TabIndex = 3;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(73, 173);
+            this.label1.Location = new System.Drawing.Point(69, 153);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 20);
             this.label1.TabIndex = 2;
@@ -195,20 +197,20 @@
             this.CmbTipoFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CmbTipoFiltro.FormattingEnabled = true;
             this.CmbTipoFiltro.Items.AddRange(new object[] {
-            "consultar barbero por id",
-            "consultar todos",
-            "consultar por nombre"});
-            this.CmbTipoFiltro.Location = new System.Drawing.Point(184, 165);
+            "Consultar Por ID Cliente",
+            "Consultar Todos",
+            "Consultar Por Nombre"});
+            this.CmbTipoFiltro.Location = new System.Drawing.Point(180, 153);
             this.CmbTipoFiltro.Name = "CmbTipoFiltro";
             this.CmbTipoFiltro.Size = new System.Drawing.Size(518, 28);
             this.CmbTipoFiltro.TabIndex = 1;
             // 
-            // textBox1
+            // TxtIdConsulta
             // 
-            this.textBox1.Location = new System.Drawing.Point(184, 120);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(518, 27);
-            this.textBox1.TabIndex = 0;
+            this.TxtIdConsulta.Location = new System.Drawing.Point(180, 120);
+            this.TxtIdConsulta.Name = "TxtIdConsulta";
+            this.TxtIdConsulta.Size = new System.Drawing.Size(518, 27);
+            this.TxtIdConsulta.TabIndex = 0;
             // 
             // FrmVisualizarClientes
             // 
@@ -237,7 +239,7 @@
         private System.Windows.Forms.Panel PanelSuperior;
         private System.Windows.Forms.Button BtnCerrar;
         private System.Windows.Forms.Panel PanelPrincipal;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtIdConsulta;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox CmbTipoFiltro;
         private System.Windows.Forms.Panel PanelFiltro;

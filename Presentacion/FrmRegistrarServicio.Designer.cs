@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrarServicio));
             this.PanelSuperior = new System.Windows.Forms.Panel();
             this.BtnSalir = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtValorServicio = new System.Windows.Forms.TextBox();
+            this.TxtDescripcionServicio = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,7 +49,7 @@
             this.PanelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSuperior.Location = new System.Drawing.Point(0, 0);
             this.PanelSuperior.Name = "PanelSuperior";
-            this.PanelSuperior.Size = new System.Drawing.Size(800, 40);
+            this.PanelSuperior.Size = new System.Drawing.Size(900, 40);
             this.PanelSuperior.TabIndex = 0;
             this.PanelSuperior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelSuperior_MouseDown);
             // 
@@ -61,34 +61,34 @@
             this.BtnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalir.Image = ((System.Drawing.Image)(resources.GetObject("BtnSalir.Image")));
-            this.BtnSalir.Location = new System.Drawing.Point(760, 0);
+            this.BtnSalir.Location = new System.Drawing.Point(860, 0);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(40, 40);
             this.BtnSalir.TabIndex = 0;
             this.BtnSalir.UseVisualStyleBackColor = false;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
-            // textBox1
+            // TxtValorServicio
             // 
-            this.textBox1.Location = new System.Drawing.Point(196, 362);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(386, 27);
-            this.textBox1.TabIndex = 1;
+            this.TxtValorServicio.Location = new System.Drawing.Point(196, 362);
+            this.TxtValorServicio.Name = "TxtValorServicio";
+            this.TxtValorServicio.Size = new System.Drawing.Size(438, 27);
+            this.TxtValorServicio.TabIndex = 1;
             // 
-            // textBox2
+            // TxtDescripcionServicio
             // 
-            this.textBox2.Location = new System.Drawing.Point(196, 102);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(386, 254);
-            this.textBox2.TabIndex = 2;
+            this.TxtDescripcionServicio.Location = new System.Drawing.Point(196, 102);
+            this.TxtDescripcionServicio.Multiline = true;
+            this.TxtDescripcionServicio.Name = "TxtDescripcionServicio";
+            this.TxtDescripcionServicio.Size = new System.Drawing.Size(438, 254);
+            this.TxtDescripcionServicio.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(599, 102);
+            this.pictureBox1.Location = new System.Drawing.Point(640, 102);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 187);
+            this.pictureBox1.Size = new System.Drawing.Size(248, 254);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -126,7 +126,7 @@
             this.BtnRegistrar.BackColor = System.Drawing.Color.Transparent;
             this.BtnRegistrar.FlatAppearance.BorderSize = 0;
             this.BtnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BtnRegistrar.Location = new System.Drawing.Point(646, 360);
+            this.BtnRegistrar.Location = new System.Drawing.Point(715, 365);
             this.BtnRegistrar.Name = "BtnRegistrar";
             this.BtnRegistrar.Size = new System.Drawing.Size(94, 29);
             this.BtnRegistrar.TabIndex = 7;
@@ -138,14 +138,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 450);
             this.Controls.Add(this.BtnRegistrar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtDescripcionServicio);
+            this.Controls.Add(this.TxtValorServicio);
             this.Controls.Add(this.PanelSuperior);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -162,8 +162,8 @@
 
         private System.Windows.Forms.Panel PanelSuperior;
         private System.Windows.Forms.Button BtnSalir;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtValorServicio;
+        private System.Windows.Forms.TextBox TxtDescripcionServicio;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
