@@ -38,6 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.BtnRegistrar = new System.Windows.Forms.Button();
+            this.TxtNombreServicio = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.PanelSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -77,10 +79,10 @@
             // 
             // TxtDescripcionServicio
             // 
-            this.TxtDescripcionServicio.Location = new System.Drawing.Point(196, 102);
+            this.TxtDescripcionServicio.Location = new System.Drawing.Point(196, 135);
             this.TxtDescripcionServicio.Multiline = true;
             this.TxtDescripcionServicio.Name = "TxtDescripcionServicio";
-            this.TxtDescripcionServicio.Size = new System.Drawing.Size(438, 254);
+            this.TxtDescripcionServicio.Size = new System.Drawing.Size(438, 221);
             this.TxtDescripcionServicio.TabIndex = 2;
             // 
             // pictureBox1
@@ -96,7 +98,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 102);
+            this.label1.Location = new System.Drawing.Point(21, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(169, 20);
             this.label1.TabIndex = 4;
@@ -133,12 +135,30 @@
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = false;
             // 
+            // TxtNombreServicio
+            // 
+            this.TxtNombreServicio.Location = new System.Drawing.Point(196, 102);
+            this.TxtNombreServicio.Name = "TxtNombreServicio";
+            this.TxtNombreServicio.Size = new System.Drawing.Size(438, 27);
+            this.TxtNombreServicio.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(47, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(143, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Nombre del servicio";
+            // 
             // FrmRegistrarServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(900, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.TxtNombreServicio);
             this.Controls.Add(this.BtnRegistrar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -169,5 +189,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BtnRegistrar;
+        private System.Windows.Forms.TextBox TxtNombreServicio;
+        private System.Windows.Forms.Label label4;
     }
 }

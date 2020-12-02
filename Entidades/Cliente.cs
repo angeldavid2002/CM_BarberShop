@@ -8,7 +8,7 @@ namespace Entidades
 {
     class Cliente : Persona,Mostrar
     {
-        public List<Reserva> Servicios { get; set; }
+        public List<Reserva> reservas { get; set; }
         public string MostrarDatos()
         {
             return "nombre: " + nombre + "\n" +
@@ -17,18 +17,6 @@ namespace Entidades
                     "numero telefono: " + numeroTelefono + "\n" +
                     "edad: " + edad + "\n" +
                     "direccion: " + direccion + "";
-        }
-        public string GenerarReserva()
-        {
-            return "";
-        }
-        public String EliminarReserva(int idReserva)
-        {
-            return "";
-        }
-        public String EliminarReservas()
-        {
-            return "";
         }
     }
 }

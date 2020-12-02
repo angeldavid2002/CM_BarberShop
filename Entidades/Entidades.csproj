@@ -49,6 +49,7 @@
     <Compile Include="Reserva.cs" />
     <Compile Include="Secretaria.cs" />
     <Compile Include="Servicio.cs" />
+    <Compile Include="ServicioPrestado.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

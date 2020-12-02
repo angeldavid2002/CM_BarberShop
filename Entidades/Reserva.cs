@@ -8,18 +8,23 @@ namespace Entidades
 {
     class Reserva:Mostrar
     {
+        public Reserva(ServicioPrestado servicioPrestado,Barbero barbero,DateTime diaReserva,int cantidadServicio,)
+        {
+            this.servicioPrestado = servicioPrestado;
+            this.Barbero = barbero;
+            this.diaReserva = diaReserva;
+            this.cantidadServicio = cantidadServicio;
+        }
         public int idReserva { get; set; }
-        public DateTime horaReserva { get; set; }
-        public List<Servicio> tipoServicio { get; set; }
-        public double valorReserva { get; set; }
-        public Barbero barbero { get; set; }
+        public DateTime diaReserva { get; set; }
+        public ServicioPrestado servicioPrestado { get; set; }
+        public int cantidadServicio { get; set; }
+        public double valorTotalReserva { get { return valorTotalReserva = cantidadServicio * servicioPrestado.valorMomento; } set { valorTotalReserva = value; } }
+        public Barbero Barbero { get; set; }
 
         public string MostrarDatos()
         {
-            return "id reserva: "+idReserva+"\n"+
-                    "hora reserva: "+horaReserva+"\n"+
-                    "valor Reserva: "+valorReserva +"\n"+
-                    "nombre Barbero: "+barbero+"";
+            return idReserva+";"+diaReserva+";"+valorTotalReserva +";"+Barbero.nombre+";";
         }
     }
 }
