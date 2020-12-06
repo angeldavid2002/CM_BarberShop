@@ -14,6 +14,12 @@ namespace Entidades
         public string numeroTelefono { get; set; }
         public int edad { get; set; }
         public string direccion { get; set; }
+        public string email { get; set; }
+
+        public Persona()
+        {
+
+        }
 
     }
 }

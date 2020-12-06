@@ -8,7 +8,7 @@ namespace Entidades
 {
     class Reserva:Mostrar
     {
-        public Reserva(ServicioPrestado servicioPrestado,Barbero barbero,DateTime diaReserva,int cantidadServicio,)
+        public Reserva(ServicioPrestado servicioPrestado,Barbero barbero,DateTime diaReserva,int cantidadServicio)
         {
             this.servicioPrestado = servicioPrestado;
             this.Barbero = barbero;

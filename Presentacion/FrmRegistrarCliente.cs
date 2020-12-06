@@ -6,11 +6,13 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
-
+using Entidades;
+using Logica;
 namespace Presentacion
 {
     public partial class FrmRegistrarCliente : Form
     {
+        PersonaService persona = new PersonaService();
         public FrmRegistrarCliente()
         {
             InitializeComponent();
@@ -29,6 +31,18 @@ namespace Presentacion
         {
             ReleaseCapture();
             SendMenssage(this.Handle, 0x112, 0xf012, 0);
+        }
+        public Cliente CrearPersona()
+        {
+            Cliente persona= new Cliente();
+            persona.nombre=TxtNombre.Text;
+            persona.apellido=TxtApellido.Text;
+            persona.email = "anyambolano@unicesar.edu.co";
+            return persona;
+        }
+        private void BtnRegistrar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(persona.EnviarEmail(CrearPersona()));
         }
     }
 }

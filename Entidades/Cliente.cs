@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Cliente : Persona,Mostrar
+    public class Cliente : Persona,Mostrar
     {
-        public List<Reserva> reservas { get; set; }
         public string MostrarDatos()
         {
             return "nombre: " + nombre + "\n" +
@@ -17,6 +16,10 @@ namespace Entidades
                     "numero telefono: " + numeroTelefono + "\n" +
                     "edad: " + edad + "\n" +
                     "direccion: " + direccion + "";
+        }
+        public Cliente()
+        {
+                
         }
     }
 }
