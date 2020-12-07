@@ -6,13 +6,17 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
+using Entidades;
+using Logica;
 
 namespace Presentacion
 {
     public partial class FrmVisualizarClientes : Form
     {
+        ClienteService clienteService;
         public FrmVisualizarClientes()
         {
+            clienteService = new ClienteService(ConfigConnection.connectionString);
             InitializeComponent();
         }
 
@@ -33,7 +37,14 @@ namespace Presentacion
 
         private void BtnBuscar_Click(object sender, EventArgs e)
         {
-
+            if(CmbTipoFiltro.Text.Equals("Consultar Todos"))
+            {
+                List<Cliente> clientes = clienteService.ConsultarTodos().clientes;
+                foreach (var item in clientes)
+                {
+                    DtGridView.Rows.Add(item.identificacion,item.nombre,item.apellido,item.numeroTelefono,item.edad,item.direccion);
+                }
+            }
         }
     }
 }

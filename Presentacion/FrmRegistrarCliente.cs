@@ -41,6 +41,7 @@ namespace Presentacion
             cliente.identificacion = TxtIdentificacion.Text;
             cliente.edad = Convert.ToInt32(TxtEdad.Text);
             cliente.direccion =  TxtDireccion.Text;
+            cliente.numeroTelefono = TxtTelefono.Text;
             return cliente;
         }
         public Boolean ValidarCamposVacios(TextBox textBox)
@@ -70,9 +71,26 @@ namespace Presentacion
             }
             return respuesta;
         }
+        public void VaciarTextBox(TextBox textBox)
+        {
+            textBox.Text = null;
+        }
+        public void VaciarListaTextBox()
+        {
+            VaciarTextBox(TxtApellido);
+            VaciarTextBox(TxtNombre);
+            VaciarTextBox(TxtDireccion);
+            VaciarTextBox(TxtEdad);
+            VaciarTextBox(TxtIdentificacion);
+            VaciarTextBox(TxtTelefono);
+        }
         private void BtnRegistrar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(clienteService.ServerVersion());
+            if (ListaTextBoxValidar())
+            {
+                MessageBox.Show(clienteService.Guardar(CrearCliente()));
+                VaciarListaTextBox();
+            }            
         }
     }
 }

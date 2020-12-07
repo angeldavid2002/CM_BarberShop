@@ -88,7 +88,15 @@ namespace Datos
                 return persona;
             }
         }
-
-
+        public int EliminarCliente(string identificacion)
+        {
+            using (var command = conexion.CreateCommand())
+            {
+                command.CommandText = @"delete from cliente where identificacion=:identificacion";
+                command.Parameters.Add("identificacion", OracleDbType.Varchar2).Value = identificacion;
+                var filas = command.ExecuteNonQuery();
+                return filas;
+            }
+        }
     }
 }

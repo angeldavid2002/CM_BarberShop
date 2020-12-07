@@ -35,21 +35,21 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelFiltro = new System.Windows.Forms.Panel();
             this.DtGridView = new System.Windows.Forms.DataGridView();
-            this.BtnBuscar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.CmbTipoFiltro = new System.Windows.Forms.ComboBox();
-            this.TxtIdConsulta = new System.Windows.Forms.TextBox();
             this.identificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CmbTipoFiltro = new System.Windows.Forms.ComboBox();
+            this.TxtIdConsulta = new System.Windows.Forms.TextBox();
             this.PanelSuperior.SuspendLayout();
             this.PanelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DtGridView)).BeginInit();
             this.PanelFiltro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DtGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelSuperior
@@ -87,6 +87,7 @@
             this.PanelPrincipal.Controls.Add(this.CmbTipoFiltro);
             this.PanelPrincipal.Controls.Add(this.TxtIdConsulta);
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelPrincipal.ForeColor = System.Drawing.Color.Black;
             this.PanelPrincipal.Location = new System.Drawing.Point(0, 40);
             this.PanelPrincipal.Name = "PanelPrincipal";
             this.PanelPrincipal.Size = new System.Drawing.Size(900, 660);
@@ -104,11 +105,17 @@
             // 
             // PanelFiltro
             // 
+            this.PanelFiltro.Controls.Add(this.DtGridView);
+            this.PanelFiltro.Location = new System.Drawing.Point(30, 210);
+            this.PanelFiltro.Name = "PanelFiltro";
+            this.PanelFiltro.Size = new System.Drawing.Size(840, 425);
+            this.PanelFiltro.TabIndex = 4;
             // 
             // DtGridView
             // 
             this.DtGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DtGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.DtGridView.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.DtGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.identificacion,
@@ -124,52 +131,6 @@
             this.DtGridView.Size = new System.Drawing.Size(840, 425);
             this.DtGridView.TabIndex = 0;
             this.DtGridView.Text = "dataGridView1";
-            this.PanelFiltro.Controls.Add(this.DtGridView);
-            this.PanelFiltro.Location = new System.Drawing.Point(30, 210);
-            this.PanelFiltro.Name = "PanelFiltro";
-            this.PanelFiltro.Size = new System.Drawing.Size(840, 425);
-            this.PanelFiltro.TabIndex = 4;
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.BtnBuscar.Location = new System.Drawing.Point(704, 119);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(94, 29);
-            this.BtnBuscar.TabIndex = 3;
-            this.BtnBuscar.Text = "Buscar";
-            this.BtnBuscar.UseVisualStyleBackColor = true;
-            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(69, 153);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Tipo de Filtro:";
-            // 
-            // CmbTipoFiltro
-            // 
-            this.CmbTipoFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbTipoFiltro.FormattingEnabled = true;
-            this.CmbTipoFiltro.Items.AddRange(new object[] {
-            "Consultar Por ID Cliente",
-            "Consultar Todos",
-            "Consultar Por Nombre"});
-            this.CmbTipoFiltro.Location = new System.Drawing.Point(180, 153);
-            this.CmbTipoFiltro.Name = "CmbTipoFiltro";
-            this.CmbTipoFiltro.Size = new System.Drawing.Size(518, 28);
-            this.CmbTipoFiltro.TabIndex = 1;
-            // 
-            // TxtIdConsulta
-            // 
-            this.TxtIdConsulta.Location = new System.Drawing.Point(180, 120);
-            this.TxtIdConsulta.Name = "TxtIdConsulta";
-            this.TxtIdConsulta.Size = new System.Drawing.Size(518, 27);
-            this.TxtIdConsulta.TabIndex = 0;
             // 
             // identificacion
             // 
@@ -213,6 +174,47 @@
             this.direccion.Name = "direccion";
             this.direccion.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.BtnBuscar.Location = new System.Drawing.Point(704, 119);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(94, 29);
+            this.BtnBuscar.TabIndex = 3;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(69, 153);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Tipo de Filtro:";
+            // 
+            // CmbTipoFiltro
+            // 
+            this.CmbTipoFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbTipoFiltro.FormattingEnabled = true;
+            this.CmbTipoFiltro.Items.AddRange(new object[] {
+            "Consultar Por ID Cliente",
+            "Consultar Todos",
+            "Consultar Por Nombre"});
+            this.CmbTipoFiltro.Location = new System.Drawing.Point(180, 153);
+            this.CmbTipoFiltro.Name = "CmbTipoFiltro";
+            this.CmbTipoFiltro.Size = new System.Drawing.Size(518, 28);
+            this.CmbTipoFiltro.TabIndex = 1;
+            // 
+            // TxtIdConsulta
+            // 
+            this.TxtIdConsulta.Location = new System.Drawing.Point(180, 120);
+            this.TxtIdConsulta.Name = "TxtIdConsulta";
+            this.TxtIdConsulta.Size = new System.Drawing.Size(518, 27);
+            this.TxtIdConsulta.TabIndex = 0;
+            // 
             // FrmVisualizarClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -221,6 +223,7 @@
             this.ClientSize = new System.Drawing.Size(900, 700);
             this.Controls.Add(this.PanelPrincipal);
             this.Controls.Add(this.PanelSuperior);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmVisualizarClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -229,8 +232,8 @@
             this.PanelPrincipal.ResumeLayout(false);
             this.PanelPrincipal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DtGridView)).EndInit();
             this.PanelFiltro.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DtGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
