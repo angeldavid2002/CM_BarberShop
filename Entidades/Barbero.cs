@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Barbero:Persona,Mostrar
+    public class Barbero:Persona,Mostrar
     {
         public List<Reserva> reservas {get;set;}
         public int numeroClientesAtendidos { get; set; }

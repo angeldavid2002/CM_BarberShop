@@ -39,6 +39,7 @@ namespace Presentacion
         private void BtnValidar_Click(object sender, EventArgs e)
         {
             FrmMenu frmMenu = new FrmMenu();
+            this.Hide();
             frmMenu.Show();
         }
     }

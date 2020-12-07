@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Secretaria:Persona,Mostrar
+    public class Secretaria:Persona,Mostrar
     {
         public Secretaria()
         {

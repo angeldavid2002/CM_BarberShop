@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PersonaService.cs" />
+    <Compile Include="ClienteService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,10 +52,6 @@
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{7bd0e030-8e6d-4459-abb3-2bce374bc63b}</Project>
       <Name>Entidades</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Infraestructura\Infraestructura.csproj">
-      <Project>{c766fa4f-65d0-4fe5-94dc-df0c707b3fef}</Project>
-      <Name>Infraestructura</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

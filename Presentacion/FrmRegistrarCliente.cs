@@ -12,10 +12,11 @@ namespace Presentacion
 {
     public partial class FrmRegistrarCliente : Form
     {
-        PersonaService persona = new PersonaService();
+        ClienteService clienteService;
         public FrmRegistrarCliente()
         {
             InitializeComponent();
+            clienteService = new ClienteService(ConfigConnection.connectionString);
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
@@ -32,17 +33,46 @@ namespace Presentacion
             ReleaseCapture();
             SendMenssage(this.Handle, 0x112, 0xf012, 0);
         }
-        public Cliente CrearPersona()
+        public Cliente CrearCliente()
         {
-            Cliente persona= new Cliente();
-            persona.nombre=TxtNombre.Text;
-            persona.apellido=TxtApellido.Text;
-            persona.email = "anyambolano@unicesar.edu.co";
-            return persona;
+            Cliente cliente= new Cliente();
+            cliente.nombre = TxtNombre.Text;
+            cliente.apellido = TxtApellido.Text;
+            cliente.identificacion = TxtIdentificacion.Text;
+            cliente.edad = Convert.ToInt32(TxtEdad.Text);
+            cliente.direccion =  TxtDireccion.Text;
+            return cliente;
+        }
+        public Boolean ValidarCamposVacios(TextBox textBox)
+        {
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                MessageBox.Show("el campo: "+textBox.Name+" no puede estar vacio");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        public Boolean ListaTextBoxValidar()
+        {
+            Boolean respuesta;
+            if (ValidarCamposVacios(TxtNombre) && ValidarCamposVacios(TxtApellido) 
+                && ValidarCamposVacios(TxtIdentificacion) && ValidarCamposVacios(TxtEdad) 
+                && ValidarCamposVacios(TxtDireccion) && ValidarCamposVacios(TxtTelefono))
+            {
+                respuesta = true;
+            }
+            else
+            {
+                respuesta = false;
+            }
+            return respuesta;
         }
         private void BtnRegistrar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(persona.EnviarEmail(CrearPersona()));
+            MessageBox.Show(clienteService.ServerVersion());
         }
     }
 }

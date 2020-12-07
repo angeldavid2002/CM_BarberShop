@@ -33,7 +33,6 @@
             this.BtnSalir = new System.Windows.Forms.Button();
             this.PanelPrincipal = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.LabelRespuesta = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.TxtIdentificacionEliminar = new System.Windows.Forms.TextBox();
@@ -71,7 +70,6 @@
             // PanelPrincipal
             // 
             this.PanelPrincipal.Controls.Add(this.pictureBox1);
-            this.PanelPrincipal.Controls.Add(this.LabelRespuesta);
             this.PanelPrincipal.Controls.Add(this.label1);
             this.PanelPrincipal.Controls.Add(this.BtnEliminar);
             this.PanelPrincipal.Controls.Add(this.TxtIdentificacionEliminar);
@@ -90,17 +88,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // LabelRespuesta
-            // 
-            this.LabelRespuesta.AutoSize = true;
-            this.LabelRespuesta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LabelRespuesta.Location = new System.Drawing.Point(429, 216);
-            this.LabelRespuesta.Name = "LabelRespuesta";
-            this.LabelRespuesta.Size = new System.Drawing.Size(85, 20);
-            this.LabelRespuesta.TabIndex = 1;
-            this.LabelRespuesta.Text = "RESPUESTA";
-            this.LabelRespuesta.Visible = false;
             // 
             // label1
             // 
@@ -161,7 +148,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.TextBox TxtIdentificacionEliminar;
-        private System.Windows.Forms.Label LabelRespuesta;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

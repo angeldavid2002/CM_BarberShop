@@ -42,9 +42,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.TxtHoraReserva = new System.Windows.Forms.TextBox();
-            this.CmbServicio = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
@@ -52,6 +49,8 @@
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.CmbServicio = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.PanelSuperior.SuspendLayout();
             this.PanelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,15 +84,14 @@
             // 
             // PanelPrincipal
             // 
+            this.PanelPrincipal.Controls.Add(this.dateTimePicker1);
             this.PanelPrincipal.Controls.Add(this.ListViewServicios);
             this.PanelPrincipal.Controls.Add(this.label6);
             this.PanelPrincipal.Controls.Add(this.TxtIdCliente);
             this.PanelPrincipal.Controls.Add(this.label5);
             this.PanelPrincipal.Controls.Add(this.label4);
             this.PanelPrincipal.Controls.Add(this.label3);
-            this.PanelPrincipal.Controls.Add(this.TxtHoraReserva);
             this.PanelPrincipal.Controls.Add(this.CmbServicio);
-            this.PanelPrincipal.Controls.Add(this.label2);
             this.PanelPrincipal.Controls.Add(this.pictureBox1);
             this.PanelPrincipal.Controls.Add(this.button2);
             this.PanelPrincipal.Controls.Add(this.BtnAgregar);
@@ -111,7 +109,7 @@
             this.DescripcionServicio,
             this.ValorServicio});
             this.ListViewServicios.HideSelection = false;
-            this.ListViewServicios.Location = new System.Drawing.Point(242, 274);
+            this.ListViewServicios.Location = new System.Drawing.Point(242, 234);
             this.ListViewServicios.Name = "ListViewServicios";
             this.ListViewServicios.Size = new System.Drawing.Size(492, 173);
             this.ListViewServicios.TabIndex = 11;
@@ -175,7 +173,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(159, 244);
+            this.label4.Location = new System.Drawing.Point(159, 204);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 20);
             this.label4.TabIndex = 4;
@@ -193,34 +191,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Hora de reserva:";
             // 
-            // TxtHoraReserva
-            // 
-            this.TxtHoraReserva.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.TxtHoraReserva.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TxtHoraReserva.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.TxtHoraReserva.Location = new System.Drawing.Point(242, 149);
-            this.TxtHoraReserva.Name = "TxtHoraReserva";
-            this.TxtHoraReserva.Size = new System.Drawing.Size(492, 30);
-            this.TxtHoraReserva.TabIndex = 2;
-            // 
-            // CmbServicio
-            // 
-            this.CmbServicio.FormattingEnabled = true;
-            this.CmbServicio.Location = new System.Drawing.Point(242, 240);
-            this.CmbServicio.Name = "CmbServicio";
-            this.CmbServicio.Size = new System.Drawing.Size(492, 28);
-            this.CmbServicio.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(343, 207);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(248, 20);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Formato (dia/mes/año hora:minuto)";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -236,7 +206,7 @@
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(413, 453);
+            this.button2.Location = new System.Drawing.Point(413, 413);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(139, 29);
             this.button2.TabIndex = 8;
@@ -246,7 +216,7 @@
             // BtnAgregar
             // 
             this.BtnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.BtnAgregar.Location = new System.Drawing.Point(740, 239);
+            this.BtnAgregar.Location = new System.Drawing.Point(740, 199);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(106, 29);
             this.BtnAgregar.TabIndex = 10;
@@ -272,6 +242,21 @@
             // 
             this.columnHeader4.Text = "Valor";
             this.columnHeader4.Width = 100;
+            // 
+            // CmbServicio
+            // 
+            this.CmbServicio.FormattingEnabled = true;
+            this.CmbServicio.Location = new System.Drawing.Point(242, 200);
+            this.CmbServicio.Name = "CmbServicio";
+            this.CmbServicio.Size = new System.Drawing.Size(492, 28);
+            this.CmbServicio.TabIndex = 5;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(242, 155);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(492, 27);
+            this.dateTimePicker1.TabIndex = 12;
             // 
             // FrmRegistrarReserva
             // 
@@ -303,9 +288,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TxtHoraReserva;
-        private System.Windows.Forms.ComboBox CmbServicio;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button BtnAgregar;
@@ -317,5 +299,7 @@
         private System.Windows.Forms.ColumnHeader NombreServicio;
         private System.Windows.Forms.ColumnHeader DescripcionServicio;
         private System.Windows.Forms.ColumnHeader ValorServicio;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox CmbServicio;
     }
 }

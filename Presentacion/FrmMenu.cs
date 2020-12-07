@@ -56,7 +56,7 @@ namespace Presentacion
         }
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
         private void BtnMinimizar_Click(object sender, EventArgs e)
         {
@@ -242,6 +242,20 @@ namespace Presentacion
         {
             LimpiarPanel();
             FrmRegistrarReserva form = new FrmRegistrarReserva();
+            AbrirForm(form);
+        }
+
+        private void BtnCambiarEstadoReserva_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmCambiarEstadoReserva form = new FrmCambiarEstadoReserva();
+            AbrirForm(form);
+        }
+
+        private void BtnVerReservasAtendidas_Click(object sender, EventArgs e)
+        {
+            LimpiarPanel();
+            FrmVerReservasAtendidas form = new FrmVerReservasAtendidas();
             AbrirForm(form);
         }
     }

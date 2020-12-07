@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    class Reserva:Mostrar
+    public class Reserva : Mostrar
     {
-        public Reserva(ServicioPrestado servicioPrestado,Barbero barbero,DateTime diaReserva,int cantidadServicio)
+        public Reserva(ServicioPrestado servicioPrestado, Barbero barbero, DateTime diaReserva, int cantidadServicio)
         {
             this.servicioPrestado = servicioPrestado;
             this.Barbero = barbero;
@@ -16,12 +16,12 @@ namespace Entidades
             this.cantidadServicio = cantidadServicio;
         }
         public int idReserva { get; set; }
+        public Boolean estadoAtendido { get; set; }
         public DateTime diaReserva { get; set; }
         public ServicioPrestado servicioPrestado { get; set; }
         public int cantidadServicio { get; set; }
         public double valorTotalReserva { get { return valorTotalReserva = cantidadServicio * servicioPrestado.valorMomento; } set { valorTotalReserva = value; } }
         public Barbero Barbero { get; set; }
-
         public string MostrarDatos()
         {
             return idReserva+";"+diaReserva+";"+valorTotalReserva +";"+Barbero.nombre+";";
