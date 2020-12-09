@@ -9,6 +9,7 @@ namespace Entidades
     public class Cliente : Persona,Mostrar
     {
         public List<Reserva> reservas { get; set; }
+        public string email { get; set; }
         public string MostrarDatos()
         {
             return "nombre: " + nombre + "\n" +

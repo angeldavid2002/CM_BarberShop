@@ -3,26 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Entidades;
-using System.Data;
 using System.Data.Common;
 using Oracle.ManagedDataAccess.Client;
-
+using Entidades;
 namespace Datos
 {
-    public class ClienteRepository
+    class BarberoRepository
     {
         private readonly OracleConnection conexion;
-        private readonly List<Cliente> clientes = new List<Cliente>();
-        public ClienteRepository(ConnectionManager connection)
+        private readonly List<Barbero> barberos = new List<Barbero>();
+        public BarberoRepository(ConnectionManager connection)
         {
             conexion = connection._conexion;
         }
-        public int Guardar(Cliente persona)
+        public int Guardar(Barbero persona)
         {
             using (var command = conexion.CreateCommand())
             {
-                command.CommandText = @"Insert Into cliente (identificacion,nombre,apellido,numerotelefono,edad,direccion)
+                command.CommandText = @"Insert Into barbero (identificacion,nombre,apellido,numerotelefono,edad,direccion)
                 values (:identificacion,:nombre,:edad,:apellido,:direccion,:numerotelefono)";
                 command.Parameters.Add("identificacion", OracleDbType.Varchar2).Value = persona.identificacion;
                 command.Parameters.Add("nombre", OracleDbType.Varchar2).Value = persona.nombre;
@@ -30,34 +28,34 @@ namespace Datos
                 command.Parameters.Add("numerotelefono", OracleDbType.Varchar2).Value = persona.numeroTelefono;
                 command.Parameters.Add("edad", OracleDbType.Decimal).Value = persona.edad;
                 command.Parameters.Add("direccion", OracleDbType.Varchar2).Value = persona.direccion;
-                
+
                 var filas = command.ExecuteNonQuery();
                 return filas;
             }
         }
-        public List<Cliente> ConsultarTodos()
+        public List<Barbero> ConsultarTodos()
         {
-            List<Cliente> clientes = new List<Cliente>();
+            List<Barbero> barberos = new List<Barbero>();
             using (var command = conexion.CreateCommand())
             {
-                command.CommandText = "select identificacion,nombre,apellido,numerotelefono,edad,direccion from cliente";
+                command.CommandText = "select identificacion,nombre,apellido,numerotelefono,edad,direccion from barbero";
                 var dataReader = command.ExecuteReader();
                 if (dataReader.HasRows)
                 {
                     while (dataReader.Read())
                     {
-                        Cliente cliente = DataReaderMapToCliente(dataReader);
-                        clientes.Add(cliente);
+                        Barbero barbero = DataReaderMapToBarbero(dataReader);
+                        barberos.Add(barbero);
                     }
                 }
             }
-            return clientes;
+            return barberos;
         }
         public string VersionConexion()
         {
             return conexion.ServerVersion;
         }
-        private Cliente DataReaderMapToCliente(DbDataReader dataReader)
+        private Barbero DataReaderMapToBarbero(DbDataReader dataReader)
         {
             if (!dataReader.HasRows)
             {
@@ -65,52 +63,52 @@ namespace Datos
             }
             else
             {
-                Cliente cliente = new Cliente();
-                cliente.identificacion = dataReader.GetString(0);
-                cliente.nombre = dataReader.GetString(1);
-                cliente.apellido = dataReader.GetString(2);
-                cliente.numeroTelefono = dataReader.GetString(3);
-                cliente.edad = dataReader.GetInt32(4);
-                cliente.direccion = dataReader.GetString(5);
-                return cliente;
+                Barbero barbero = new Barbero();
+                barbero.identificacion = dataReader.GetString(0);
+                barbero.nombre = dataReader.GetString(1);
+                barbero.apellido = dataReader.GetString(2);
+                barbero.numeroTelefono = dataReader.GetString(3);
+                barbero.edad = dataReader.GetInt32(4);
+                barbero.direccion = dataReader.GetString(5);
+                return barbero;
             }
         }
-        public Cliente BuscarPorIdentificacion(string identificacion)
+        public Barbero BuscarPorIdentificacion(string identificacion)
         {
             using (var command = conexion.CreateCommand())
-            { 
-                command.CommandText = @"select identificacion,nombre,apellido,numerotelefono,edad,direccion from cliente where identificacion =:identificacion ";
+            {
+                command.CommandText = @"select identificacion,nombre,apellido,numerotelefono,edad,direccion from barbero where identificacion =:identificacion ";
                 command.Parameters.Add("identificacion", OracleDbType.Varchar2).Value = identificacion;
                 var dataReader = command.ExecuteReader();
                 dataReader.Read();
-                Cliente cliente = DataReaderMapToCliente(dataReader);
-                return cliente;
+                Barbero barbero = DataReaderMapToBarbero(dataReader);
+                return barbero;
             }
         }
-        public List<Cliente> BuscarPorNombre(string nombre)
+        public List<Barbero> BuscarPorNombre(string nombre)
         {
-            List<Cliente> clientes = new List<Cliente>();
+            List<Barbero> barberos = new List<Barbero>();
             using (var command = conexion.CreateCommand())
             {
-                command.CommandText = @"select identificacion,nombre,apellido,numerotelefono,edad,direccion from cliente where nombre =:nombre ";
+                command.CommandText = @"select identificacion,nombre,apellido,numerotelefono,edad,direccion from barbero where nombre =:nombre ";
                 command.Parameters.Add("nombre", OracleDbType.Varchar2).Value = nombre;
                 var dataReader = command.ExecuteReader();
                 if (dataReader.HasRows)
                 {
                     while (dataReader.Read())
                     {
-                        Cliente cliente = DataReaderMapToCliente(dataReader);
-                        clientes.Add(cliente);
+                        Barbero barbero = DataReaderMapToBarbero(dataReader);
+                        barberos.Add(barbero);
                     }
                 }
             }
-            return clientes;
+            return barberos;
         }
         public int EliminarCliente(string identificacion)
         {
             using (var command = conexion.CreateCommand())
             {
-                command.CommandText = @"delete from cliente where identificacion=:identificacion";
+                command.CommandText = @"delete from barbero where identificacion=:identificacion";
                 command.Parameters.Add("identificacion", OracleDbType.Varchar2).Value = identificacion;
                 var filas = command.ExecuteNonQuery();
                 return filas;

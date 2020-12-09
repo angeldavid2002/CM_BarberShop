@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarberoServices.cs" />
     <Compile Include="ClienteService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -52,6 +53,10 @@
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{7bd0e030-8e6d-4459-abb3-2bce374bc63b}</Project>
       <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura\Infraestructura.csproj">
+      <Project>{747be64f-01fa-4b36-9161-44d26fcf2f67}</Project>
+      <Name>Infraestructura</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

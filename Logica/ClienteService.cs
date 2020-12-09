@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Entidades;
 using Datos;
+using System.IO;
+using Infraestructura;
 namespace Logica
 {
     public class ClienteService
@@ -36,6 +38,44 @@ namespace Logica
                 connection.Close();
             }
         }
+        public RespuestaCliente ConsultarIdentificacion(string identificacion)
+        {
+            RespuestaCliente respuesta;
+            try
+            {
+                connection.Open();
+                respuesta = new RespuestaCliente(clienteRepository.BuscarPorIdentificacion(identificacion));
+                return respuesta;
+            }
+            catch (Exception e)
+            {
+                respuesta = new RespuestaCliente("Error en la aplicacion: " + e.Message);
+                return respuesta;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+        public RespuestaClientes ConsultarNombre(string nombre)
+        {
+            RespuestaClientes respuesta;
+            try
+            {
+                connection.Open();
+                respuesta = new RespuestaClientes(clienteRepository.BuscarPorNombre(nombre));
+                return respuesta;
+            }
+            catch (Exception e)
+            {
+                respuesta = new RespuestaClientes("Error en la aplicacion: " + e.Message);
+                return respuesta;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
         public string Guardar(Cliente cliente)
         {
             try
@@ -58,6 +98,35 @@ namespace Logica
             finally
             {
                 connection.Close();
+            }
+        }
+        public string EnviarEmail(string ruta)
+        {
+            Email email = new Email();
+            string mensajeEmail;
+            string correo = "anyambolano@unicesar.edu.co";
+            try
+            {
+                mensajeEmail = email.EnviarEmail(correo,ruta);
+                return "se envio el email exitosamente " + mensajeEmail;
+            }
+            catch (Exception e)
+            {
+                return "error en la app: "+e.Message;
+            }
+        }
+        public string GenerarPdf(List<Cliente> clientes, string filename)
+        {
+            DocumentoPdf documentoPdf = new DocumentoPdf();
+            try
+            {
+                documentoPdf.GuardarPdf(clientes,filename);
+                return "Se generó el Documento satisfactoriamente";
+            }
+            catch (Exception e)
+            {
+
+                return "Error al crear docuemnto" + e.Message;
             }
         }
         public string EliminarCliente(String identificacion)
@@ -116,4 +185,22 @@ namespace Logica
             this.mensaje = mensaje;
         }
     }
+    public class RespuestaCliente
+    {
+        public Cliente cliente { get; set; }
+        public bool listaVacia { get; set; }
+        public string mensaje { get; set; }
+        public RespuestaCliente(Cliente cliente)
+        {
+            this.cliente = cliente;
+            this.listaVacia = false;
+            this.mensaje = "lectura exitosa";
+        }
+        public RespuestaCliente(string mensaje)
+        {
+            this.listaVacia = true;
+            this.mensaje = mensaje;
+        }
+    }
+
 }

@@ -32,6 +32,8 @@
             this.PanelSuperior = new System.Windows.Forms.Panel();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.PanelPrincipal = new System.Windows.Forms.Panel();
+            this.BtnEnviarArchivo = new System.Windows.Forms.Button();
+            this.BtnGenerarPdf = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelFiltro = new System.Windows.Forms.Panel();
             this.DtGridView = new System.Windows.Forms.DataGridView();
@@ -80,6 +82,8 @@
             // 
             // PanelPrincipal
             // 
+            this.PanelPrincipal.Controls.Add(this.BtnEnviarArchivo);
+            this.PanelPrincipal.Controls.Add(this.BtnGenerarPdf);
             this.PanelPrincipal.Controls.Add(this.pictureBox1);
             this.PanelPrincipal.Controls.Add(this.PanelFiltro);
             this.PanelPrincipal.Controls.Add(this.BtnBuscar);
@@ -92,6 +96,26 @@
             this.PanelPrincipal.Name = "PanelPrincipal";
             this.PanelPrincipal.Size = new System.Drawing.Size(900, 660);
             this.PanelPrincipal.TabIndex = 1;
+            // 
+            // BtnEnviarArchivo
+            // 
+            this.BtnEnviarArchivo.Location = new System.Drawing.Point(757, 41);
+            this.BtnEnviarArchivo.Name = "BtnEnviarArchivo";
+            this.BtnEnviarArchivo.Size = new System.Drawing.Size(131, 29);
+            this.BtnEnviarArchivo.TabIndex = 6;
+            this.BtnEnviarArchivo.Text = "Enviar Archivo";
+            this.BtnEnviarArchivo.UseVisualStyleBackColor = true;
+            this.BtnEnviarArchivo.Click += new System.EventHandler(this.BtnEnviarArchivo_Click);
+            // 
+            // BtnGenerarPdf
+            // 
+            this.BtnGenerarPdf.Location = new System.Drawing.Point(779, 6);
+            this.BtnGenerarPdf.Name = "BtnGenerarPdf";
+            this.BtnGenerarPdf.Size = new System.Drawing.Size(109, 29);
+            this.BtnGenerarPdf.TabIndex = 2;
+            this.BtnGenerarPdf.Text = "Generar Pdf";
+            this.BtnGenerarPdf.UseVisualStyleBackColor = true;
+            this.BtnGenerarPdf.Click += new System.EventHandler(this.BtnGenerarPdf_Click);
             // 
             // pictureBox1
             // 
@@ -207,6 +231,7 @@
             this.CmbTipoFiltro.Name = "CmbTipoFiltro";
             this.CmbTipoFiltro.Size = new System.Drawing.Size(518, 28);
             this.CmbTipoFiltro.TabIndex = 1;
+            this.CmbTipoFiltro.SelectedIndexChanged += new System.EventHandler(this.CmbTipoFiltro_SelectedIndexChanged);
             // 
             // TxtIdConsulta
             // 
@@ -256,5 +281,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroTelefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn edad;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccion;
+        private System.Windows.Forms.Button BtnEnviarArchivo;
+        private System.Windows.Forms.Button BtnGenerarPdf;
     }
 }

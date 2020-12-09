@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Entidades;
+using Logica;
 
 namespace Presentacion
 {
@@ -15,6 +17,7 @@ namespace Presentacion
         {
             InitializeComponent();
             EstablecerDiseño();
+            clienteService = new ClienteService(ConfigConnection.connectionString);
         }
         private void EstablecerDiseño()
         {
@@ -34,10 +37,50 @@ namespace Presentacion
 
         private void BtnRegistrar_Click(object sender, EventArgs e)
         {
-            LabelRespuesta.Text = "salud por esa vaina no me joda";
-            LabelRespuesta.Visible = true;
+            if (ListaTextBoxValidar())
+            {
+                MessageBox.Show(clienteService.Guardar(CrearBarbero()));
+                VaciarListaTextBox();
+            }
         }
-
+        public Barbero CrearBarbero()
+        {
+            Barbero barbero = new Barbero();
+            barbero.nombre = TxtNombre.Text;
+            barbero.apellido = TxtApellido.Text;
+            barbero.identificacion = TxtIdentificacion.Text;
+            barbero.edad = Convert.ToInt32(TxtEdad.Text);
+            barbero.direccion = TxtDireccion.Text;
+            barbero.numeroTelefono = TxtTelefono.Text;
+            return barbero;
+        }
+        public Boolean ListaTextBoxValidar()
+        {
+            Boolean respuesta;
+            if (ValidarCamposVacios(TxtNombre) && ValidarCamposVacios(TxtApellido)
+                && ValidarCamposVacios(TxtIdentificacion) && ValidarCamposVacios(TxtEdad)
+                && ValidarCamposVacios(TxtDireccion) && ValidarCamposVacios(TxtTelefono))
+            {
+                respuesta = true;
+            }
+            else
+            {
+                respuesta = false;
+            }
+            return respuesta;
+        }
+        public Boolean ValidarCamposVacios(TextBox textBox)
+        {
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                MessageBox.Show("el campo: " + textBox.Name + " no puede estar vacio");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Close();

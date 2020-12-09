@@ -15,6 +15,7 @@ namespace Entidades
             this.diaReserva = diaReserva;
             this.cantidadServicio = cantidadServicio;
         }
+        public string idCliente { get; set; }
         public int idReserva { get; set; }
         public Boolean estadoAtendido { get; set; }
         public DateTime diaReserva { get; set; }
