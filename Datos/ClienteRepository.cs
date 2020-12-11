@@ -53,10 +53,6 @@ namespace Datos
             }
             return clientes;
         }
-        public string VersionConexion()
-        {
-            return conexion.ServerVersion;
-        }
         private Cliente DataReaderMapToCliente(DbDataReader dataReader)
         {
             if (!dataReader.HasRows)

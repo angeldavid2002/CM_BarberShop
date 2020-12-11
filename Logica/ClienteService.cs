@@ -152,22 +152,6 @@ namespace Logica
                 connection.Close();
             }
         }
-        public string ServerVersion()
-        {
-            try
-            {
-                connection.Open();
-                return clienteRepository.VersionConexion();
-            }
-            catch (Exception e)
-            {
-                return "error en la app: " + e.Message;
-            }
-            finally
-            {
-                connection.Close();
-            }
-        }
     }
     public class RespuestaClientes{
         public List<Cliente> clientes { get; set; }

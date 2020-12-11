@@ -89,6 +89,7 @@
             this.PanelPrincipal.Controls.Add(this.CmbTipoFiltro);
             this.PanelPrincipal.Controls.Add(this.TxtIdConsulta);
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelPrincipal.ForeColor = System.Drawing.Color.Black;
             this.PanelPrincipal.Location = new System.Drawing.Point(0, 40);
             this.PanelPrincipal.Name = "PanelPrincipal";
             this.PanelPrincipal.Size = new System.Drawing.Size(900, 660);
@@ -108,7 +109,7 @@
             // 
             this.BtnBuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.BtnBuscar.Location = new System.Drawing.Point(704, 120);
+            this.BtnBuscar.Location = new System.Drawing.Point(714, 120);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(94, 29);
             this.BtnBuscar.TabIndex = 6;
@@ -199,7 +200,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(78, 153);
+            this.label2.Location = new System.Drawing.Point(88, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 3;
@@ -214,7 +215,7 @@
             "Consultar Por ID Barbero",
             "Consultar Todos",
             "Consultar Por Nombre"});
-            this.CmbTipoFiltro.Location = new System.Drawing.Point(180, 153);
+            this.CmbTipoFiltro.Location = new System.Drawing.Point(190, 153);
             this.CmbTipoFiltro.Name = "CmbTipoFiltro";
             this.CmbTipoFiltro.Size = new System.Drawing.Size(518, 28);
             this.CmbTipoFiltro.TabIndex = 1;
@@ -223,7 +224,7 @@
             // TxtIdConsulta
             // 
             this.TxtIdConsulta.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.TxtIdConsulta.Location = new System.Drawing.Point(180, 120);
+            this.TxtIdConsulta.Location = new System.Drawing.Point(190, 120);
             this.TxtIdConsulta.Name = "TxtIdConsulta";
             this.TxtIdConsulta.Size = new System.Drawing.Size(518, 27);
             this.TxtIdConsulta.TabIndex = 0;

@@ -49,6 +49,7 @@
     <Compile Include="ConnectionManager.cs" />
     <Compile Include="ClienteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">

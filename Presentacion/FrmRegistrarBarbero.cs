@@ -13,15 +13,11 @@ namespace Presentacion
 {
     public partial class FrmRegistrarBarbero : Form
     {
+        BarberoServices barberoServices;
         public FrmRegistrarBarbero()
         {
             InitializeComponent();
-            EstablecerDiseño();
-            clienteService = new ClienteService(ConfigConnection.connectionString);
-        }
-        private void EstablecerDiseño()
-        {
-            LabelRespuesta.Visible = false;
+            barberoServices = new BarberoServices(ConfigConnection.connectionString);
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -39,9 +35,22 @@ namespace Presentacion
         {
             if (ListaTextBoxValidar())
             {
-                MessageBox.Show(clienteService.Guardar(CrearBarbero()));
+                MessageBox.Show(barberoServices.Guardar(CrearBarbero()));
                 VaciarListaTextBox();
             }
+        }
+        public void VaciarTextBox(TextBox textBox)
+        {
+            textBox.Text = null;
+        }
+        public void VaciarListaTextBox()
+        {
+            VaciarTextBox(TxtApellido);
+            VaciarTextBox(TxtNombre);
+            VaciarTextBox(TxtDireccion);
+            VaciarTextBox(TxtEdad);
+            VaciarTextBox(TxtIdentificacion);
+            VaciarTextBox(TxtTelefono);
         }
         public Barbero CrearBarbero()
         {

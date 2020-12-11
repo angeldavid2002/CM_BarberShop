@@ -8,7 +8,7 @@ using Oracle.ManagedDataAccess.Client;
 using Entidades;
 namespace Datos
 {
-    class BarberoRepository
+    public class BarberoRepository
     {
         private readonly OracleConnection conexion;
         private readonly List<Barbero> barberos = new List<Barbero>();
@@ -50,10 +50,6 @@ namespace Datos
                 }
             }
             return barberos;
-        }
-        public string VersionConexion()
-        {
-            return conexion.ServerVersion;
         }
         private Barbero DataReaderMapToBarbero(DbDataReader dataReader)
         {

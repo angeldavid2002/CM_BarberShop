@@ -82,9 +82,12 @@ namespace Presentacion
                     {
                         if (clienteService.ConsultarIdentificacion(TxtIdConsulta.Text).listaVacia==false)
                         {
-                            cliente = clienteService.ConsultarIdentificacion(TxtIdConsulta.Text).cliente;
-                            DtGridView.Rows.Add(cliente.identificacion, cliente.nombre, cliente.apellido,
-                            cliente.numeroTelefono, cliente.edad, cliente.direccion);
+                            if (clienteService.ConsultarIdentificacion(TxtIdConsulta.Text).cliente!=null)
+                            {
+                                cliente = clienteService.ConsultarIdentificacion(TxtIdConsulta.Text).cliente;
+                                DtGridView.Rows.Add(cliente.identificacion, cliente.nombre, cliente.apellido,
+                                cliente.numeroTelefono, cliente.edad, cliente.direccion);
+                            }
                         }
                         else
                         {

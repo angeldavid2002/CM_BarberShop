@@ -6,22 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Cliente : Persona,Mostrar
+    public class Cliente : Persona
     {
         public List<Reserva> reservas { get; set; }
         public string email { get; set; }
-        public string MostrarDatos()
-        {
-            return "nombre: " + nombre + "\n" +
-                    "apellido: " + apellido + "\n" +
-                    "identificacion: " + identificacion + "\n" +
-                    "numero telefono: " + numeroTelefono + "\n" +
-                    "edad: " + edad + "\n" +
-                    "direccion: " + direccion + "";
-        }
-        public Cliente()
-        {
-                
-        }
     }
 }

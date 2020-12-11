@@ -6,14 +6,22 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Entidades;
+using Logica;
+
 
 namespace Presentacion
 {
     public partial class FrmVisualizacionBarberos : Form
     {
+        private BarberoServices barberoServices;
+        private List<Barbero> barberos = new List<Barbero>();
+        private Barbero barbero;
+        private string filename;
         public FrmVisualizacionBarberos()
         {
             InitializeComponent();
+            barberoServices = new BarberoServices(ConfigConnection.connectionString);
             EstablecerDiseño();
         }
         private void EstablecerDiseño()
@@ -38,15 +46,7 @@ namespace Presentacion
 
         private void CmbTipoFiltro_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(CmbTipoFiltro.SelectedItem.ToString()!=null)
-            {
-                string id_filtro = CmbTipoFiltro.SelectedItem.ToString();
-                HabilitarSeleccion(id_filtro);
-            }
-            else
-            {
-
-            }
+            HabilitarSeleccion(CmbTipoFiltro.SelectedItem.ToString());
         }
         private void HabilitarSeleccion(string id_filtro)
         {
@@ -61,10 +61,90 @@ namespace Presentacion
                 TxtIdConsulta.Enabled = true;
             }
         }
-
+        public bool ValidarTextBoxVacio(TextBox textBox)
+        {
+            if (string.IsNullOrEmpty(textBox.Text))
+            {
+                MessageBox.Show("no se puede hacer la consulta porque el campo esta vacio");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
         private void BtnBuscar_Click(object sender, EventArgs e)
         {
-
+            DtGridBarberosFiltrados.Rows.Clear();
+            try
+            {
+                if (CmbTipoFiltro.Text.Equals("Consultar Todos"))
+                {
+                    if (barberoServices.ConsultarTodos().listaVacia == false)
+                    {
+                        if (barberoServices.ConsultarTodos().barberos.Count > 0)
+                        {
+                            barberos = barberoServices.ConsultarTodos().barberos;
+                            foreach (var item in barberos)
+                            {
+                                DtGridBarberosFiltrados.Rows.Add(item.nombre, item.apellido, item.identificacion, item.numeroTelefono, item.edad, item.direccion,item.numeroClientesAtendidos);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("no hay elementos", "informacion");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("no hay elementos", "informacion");
+                    }
+                }
+                else if (CmbTipoFiltro.Text.Equals("Consultar Por ID Barbero"))
+                {
+                    if (ValidarTextBoxVacio(TxtIdConsulta))
+                    {
+                        if (barberoServices.ConsultarIdentificacion(TxtIdConsulta.Text).listaVacia == false)
+                        {
+                            if (barberoServices.ConsultarIdentificacion(TxtIdConsulta.Text).barbero!=null)
+                            {
+                                barbero = barberoServices.ConsultarIdentificacion(TxtIdConsulta.Text).barbero;
+                                DtGridBarberosFiltrados.Rows.Add(barbero.nombre, barbero.apellido, barbero.identificacion, barbero.numeroTelefono, barbero.edad, barbero.direccion, barbero.numeroClientesAtendidos);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("no hay elementos", "informacion");
+                        }
+                    }
+                }
+                else if (CmbTipoFiltro.Text.Equals("Consultar Por Nombre"))
+                {
+                    if (ValidarTextBoxVacio(TxtIdConsulta))
+                    {
+                        if (barberoServices.ConsultarNombre(TxtIdConsulta.Text).listaVacia == false)
+                        {
+                            barberos = barberoServices.ConsultarNombre(TxtIdConsulta.Text).barberos;
+                            foreach (var item in barberos)
+                            {
+                                DtGridBarberosFiltrados.Rows.Add(item.nombre, item.apellido, item.identificacion, item.numeroTelefono, item.edad, item.direccion, item.numeroClientesAtendidos);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("no hay elementos", "informacion");
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("seleccione una opcion", "ERROR");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error: " + ex.Message);
+            }
         }
     }
 }

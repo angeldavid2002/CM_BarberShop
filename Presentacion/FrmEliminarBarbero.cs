@@ -6,14 +6,17 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-
+using Entidades;
+using Logica;
 namespace Presentacion
 {
     public partial class FrmEliminarBarbero : Form
     {
+        BarberoServices barberoServices;
         public FrmEliminarBarbero()
         {
             InitializeComponent();
+            barberoServices = new BarberoServices(ConfigConnection.connectionString);
         }
 
         private void BtnSalir_Click(object sender, EventArgs e)
@@ -33,7 +36,21 @@ namespace Presentacion
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (string.IsNullOrEmpty(TxtIdentificacionEliminar.Text)!=true)
+                {
+                    MessageBox.Show(barberoServices.EliminarBarbero(TxtIdentificacionEliminar.Text),"informacion");
+                }
+                else
+                {
+                    MessageBox.Show("el campo esta vacio", "informacion");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

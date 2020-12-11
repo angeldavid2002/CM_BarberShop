@@ -45,7 +45,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.LabelRespuesta = new System.Windows.Forms.Label();
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.PanelSuperior.SuspendLayout();
             this.PanelPrincipal.SuspendLayout();
@@ -95,7 +94,6 @@
             this.PanelPrincipal.Controls.Add(this.label4);
             this.PanelPrincipal.Controls.Add(this.label3);
             this.PanelPrincipal.Controls.Add(this.label2);
-            this.PanelPrincipal.Controls.Add(this.LabelRespuesta);
             this.PanelPrincipal.Controls.Add(this.BtnRegistrar);
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPrincipal.Location = new System.Drawing.Point(0, 40);
@@ -249,17 +247,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Direccion:";
             // 
-            // LabelRespuesta
-            // 
-            this.LabelRespuesta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.LabelRespuesta.AutoSize = true;
-            this.LabelRespuesta.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LabelRespuesta.Location = new System.Drawing.Point(40, 308);
-            this.LabelRespuesta.Name = "LabelRespuesta";
-            this.LabelRespuesta.Size = new System.Drawing.Size(76, 20);
-            this.LabelRespuesta.TabIndex = 6;
-            this.LabelRespuesta.Text = "Respuesta";
-            // 
             // BtnRegistrar
             // 
             this.BtnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -311,7 +298,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label LabelRespuesta;
         private System.Windows.Forms.Button BtnRegistrar;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

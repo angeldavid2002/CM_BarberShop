@@ -168,6 +168,7 @@
             this.PanelIzquierdo.Controls.Add(this.BtnAdministrarBarberos);
             this.PanelIzquierdo.Controls.Add(this.SubPanelIzquierdoSuperior);
             this.PanelIzquierdo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelIzquierdo.ForeColor = System.Drawing.Color.Black;
             this.PanelIzquierdo.Location = new System.Drawing.Point(0, 50);
             this.PanelIzquierdo.Name = "PanelIzquierdo";
             this.PanelIzquierdo.Size = new System.Drawing.Size(230, 650);
@@ -175,6 +176,7 @@
             // 
             // PanelSubMenuGestionUsuario
             // 
+            this.PanelSubMenuGestionUsuario.BackColor = System.Drawing.Color.White;
             this.PanelSubMenuGestionUsuario.Controls.Add(this.BtnVisualizarServicio);
             this.PanelSubMenuGestionUsuario.Controls.Add(this.BtnModificarServicio);
             this.PanelSubMenuGestionUsuario.Controls.Add(this.BtnRegistrarServicio);
@@ -193,6 +195,7 @@
             this.BtnVisualizarServicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnVisualizarServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVisualizarServicio.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnVisualizarServicio.ForeColor = System.Drawing.Color.White;
             this.BtnVisualizarServicio.Location = new System.Drawing.Point(0, 90);
             this.BtnVisualizarServicio.Name = "BtnVisualizarServicio";
             this.BtnVisualizarServicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -211,6 +214,7 @@
             this.BtnModificarServicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnModificarServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnModificarServicio.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnModificarServicio.ForeColor = System.Drawing.Color.White;
             this.BtnModificarServicio.Location = new System.Drawing.Point(0, 60);
             this.BtnModificarServicio.Name = "BtnModificarServicio";
             this.BtnModificarServicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -229,6 +233,7 @@
             this.BtnRegistrarServicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnRegistrarServicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrarServicio.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnRegistrarServicio.ForeColor = System.Drawing.Color.White;
             this.BtnRegistrarServicio.Location = new System.Drawing.Point(0, 30);
             this.BtnRegistrarServicio.Name = "BtnRegistrarServicio";
             this.BtnRegistrarServicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -247,6 +252,7 @@
             this.BtnCambiarPassword.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.BtnCambiarPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCambiarPassword.Font = new System.Drawing.Font("Gadugi", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnCambiarPassword.ForeColor = System.Drawing.Color.White;
             this.BtnCambiarPassword.Location = new System.Drawing.Point(0, 0);
             this.BtnCambiarPassword.Name = "BtnCambiarPassword";
             this.BtnCambiarPassword.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);

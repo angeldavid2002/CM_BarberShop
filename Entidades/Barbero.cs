@@ -6,22 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Barbero:Persona,Mostrar
+    public class Barbero:Persona
     {
         public List<Reserva> reservas {get;set;}
         public int numeroClientesAtendidos { get; set; }
         public double salario { get; set; }
-        public string MostrarDatos()
-        {
-            return "nombre: " + nombre + "\n" +
-                    "apellido: " + apellido + "\n" +
-                    "identificacion: " + identificacion + "\n" +
-                    "numero telefono: " + numeroTelefono + "\n" +
-                    "edad: " + edad + "\n" +
-                    "direccion: " + direccion + "\n"+
-                    "numero clientes atendidos: "+numeroClientesAtendidos+"\n"+
-                    "salario: "+salario+"";
-        }
         public string CalcularSalario(double pagoPorCliente)
         {
             salario = numeroClientesAtendidos * pagoPorCliente;

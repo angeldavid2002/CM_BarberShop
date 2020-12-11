@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Secretaria:Persona,Mostrar
+    public class Secretaria:Persona
     {
         public Secretaria()
         {
@@ -14,16 +14,6 @@ namespace Entidades
         }
         public string user { get; set; }
         public string contraseña { get; set; }
-
-        public string MostrarDatos()
-        {
-            return "nombre: " + nombre + "\n" +
-                    "apellido: " + apellido + "\n" +
-                    "identificacion: " + identificacion + "\n" +
-                    "numero telefono: " + numeroTelefono + "\n" +
-                    "edad: " + edad + "\n" +
-                    "direccion: " + direccion + "";
-        }
         public string ValidarUsuario(string user, string contraseña)
         {
             if (this.user.Equals(user))
