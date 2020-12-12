@@ -8,21 +8,27 @@ namespace Entidades
 {
     public class Reserva
     {
-        public Reserva(string idCliente,ServicioPrestado servicioPrestado, Barbero barbero, DateTime diaReserva, int cantidadServicio)
+        public Reserva(string idCliente,List<ServicioPrestado> servicioPrestados, Barbero barbero, DateTime diaReserva)
         {
+            this.serviciosPrestados = servicioPrestados;
             this.idCliente = idCliente;
-            this.servicioPrestado = servicioPrestado;
             this.Barbero = barbero;
             this.diaReserva = diaReserva;
-            this.cantidadServicio = cantidadServicio;
+        }
+        public Reserva()
+        {
         }
         public string idCliente { get; set; }
         public int idReserva { get; set; }
         public Boolean estadoAtendido { get; set; }
         public DateTime diaReserva { get; set; }
-        public ServicioPrestado servicioPrestado { get; set; }
-        public int cantidadServicio { get; set; }
-        public double valorTotalReserva { get { return valorTotalReserva = cantidadServicio * servicioPrestado.valorMomento; } set { valorTotalReserva = value; } }
+        public List<ServicioPrestado> serviciosPrestados { get; set; }
         public Barbero Barbero { get; set; }
+        public double valorTotalReserva { get { return calcularValorTotal(); } set { valorTotalReserva = value; } }
+        private double calcularValorTotal()
+        {
+            return serviciosPrestados.Sum(x=> x.valorTotal);
+        }
+        
     }
 }

@@ -134,6 +134,7 @@
             this.BtnRegistrar.TabIndex = 7;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = false;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // TxtNombreServicio
             // 

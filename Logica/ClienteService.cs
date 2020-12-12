@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Entidades;
 using Datos;
-using System.IO;
 using Infraestructura;
 namespace Logica
 {

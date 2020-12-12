@@ -13,6 +13,8 @@ namespace Entidades
         public string nombreServicio { get; set; }
         public string descripcionServicio { get; set; }
 
+        public int cantidadServicio { get; set; }
+        public double valorTotal { get; set; }
         public ServicioPrestado(Servicio servicio)
         {
             valorMomento = servicio.valorServicio;
