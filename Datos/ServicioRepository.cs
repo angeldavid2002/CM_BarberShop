@@ -88,6 +88,25 @@ namespace Datos
                 return filas;
             }
         }
+        public List<Servicio> BuscarPorNombre(string nombre)
+        {
+            List<Servicio> servicios = new List<Servicio>();
+            using (var command = conexion.CreateCommand())
+            {
+                command.CommandText = @"select IDSERVICIO,NOMBRESERVICIO,DESCRIPCIONSERVICIO,VALORSERVICIO from servicio where NOMBRESERVICIO=:nombre ";
+                command.Parameters.Add("nombre", OracleDbType.Varchar2).Value = nombre;
+                var dataReader = command.ExecuteReader();
+                if (dataReader.HasRows)
+                {
+                    while (dataReader.Read())
+                    {
+                        Servicio servicio = DataReaderMapToServicio(dataReader);
+                        servicios.Add(servicio);
+                    }
+                }
+            }
+            return servicios;
+        }
 
     }
 }

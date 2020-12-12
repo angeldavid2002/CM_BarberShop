@@ -42,6 +42,25 @@ namespace Logica
                 connection.Close();
             }
         }
+        public RespuestaServicios ConsultarNombre(string nombre)
+        {
+            RespuestaServicios respuesta;
+            try
+            {
+                connection.Open();
+                respuesta = new RespuestaServicios(servicioRepository.BuscarPorNombre(nombre));
+                return respuesta;
+            }
+            catch (Exception e)
+            {
+                respuesta = new RespuestaServicios("Error en la aplicacion: " + e.Message);
+                return respuesta;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
         public RespuestaServicios ConsultarTodos()
         {
             RespuestaServicios respuesta;

@@ -130,16 +130,17 @@
             // PanelFiltro
             // 
             this.PanelFiltro.Controls.Add(this.DtGridView);
+            this.PanelFiltro.ForeColor = System.Drawing.Color.Black;
             this.PanelFiltro.Location = new System.Drawing.Point(30, 210);
             this.PanelFiltro.Name = "PanelFiltro";
-            this.PanelFiltro.Size = new System.Drawing.Size(840, 425);
+            this.PanelFiltro.Size = new System.Drawing.Size(831, 425);
             this.PanelFiltro.TabIndex = 4;
             // 
             // DtGridView
             // 
             this.DtGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DtGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.DtGridView.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.DtGridView.BackgroundColor = System.Drawing.Color.DarkGray;
             this.DtGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DtGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.identificacion,
@@ -149,10 +150,11 @@
             this.edad,
             this.direccion});
             this.DtGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DtGridView.GridColor = System.Drawing.Color.Black;
             this.DtGridView.Location = new System.Drawing.Point(0, 0);
             this.DtGridView.Name = "DtGridView";
             this.DtGridView.RowHeadersWidth = 51;
-            this.DtGridView.Size = new System.Drawing.Size(840, 425);
+            this.DtGridView.Size = new System.Drawing.Size(831, 425);
             this.DtGridView.TabIndex = 0;
             this.DtGridView.Text = "dataGridView1";
             // 

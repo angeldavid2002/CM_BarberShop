@@ -40,7 +40,7 @@
             this.TxtIdConsulta = new System.Windows.Forms.TextBox();
             this.ComboTipoFiltro = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnBuscar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelSuperior.SuspendLayout();
             this.PanelPrincipal.SuspendLayout();
@@ -80,7 +80,7 @@
             this.PanelPrincipal.Controls.Add(this.TxtIdConsulta);
             this.PanelPrincipal.Controls.Add(this.ComboTipoFiltro);
             this.PanelPrincipal.Controls.Add(this.label1);
-            this.PanelPrincipal.Controls.Add(this.button1);
+            this.PanelPrincipal.Controls.Add(this.BtnBuscar);
             this.PanelPrincipal.Controls.Add(this.pictureBox1);
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPrincipal.Location = new System.Drawing.Point(0, 40);
@@ -148,6 +148,7 @@
             this.ComboTipoFiltro.Name = "ComboTipoFiltro";
             this.ComboTipoFiltro.Size = new System.Drawing.Size(518, 28);
             this.ComboTipoFiltro.TabIndex = 1;
+            this.ComboTipoFiltro.SelectedIndexChanged += new System.EventHandler(this.ComboTipoFiltro_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -159,15 +160,16 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Tipo de Filtro:";
             // 
-            // button1
+            // BtnBuscar
             // 
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(710, 116);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnBuscar.ForeColor = System.Drawing.Color.Black;
+            this.BtnBuscar.Location = new System.Drawing.Point(710, 116);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(94, 29);
+            this.BtnBuscar.TabIndex = 3;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click_1);
             // 
             // pictureBox1
             // 
@@ -187,6 +189,7 @@
             this.ClientSize = new System.Drawing.Size(900, 700);
             this.Controls.Add(this.PanelPrincipal);
             this.Controls.Add(this.PanelSuperior);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmVisualizarServicios";
             this.Text = "FrmVisualizarServicios";
@@ -207,7 +210,7 @@
         private System.Windows.Forms.TextBox TxtIdConsulta;
         private System.Windows.Forms.ComboBox ComboTipoFiltro;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView DataGridFiltroServicios;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDServicio;
