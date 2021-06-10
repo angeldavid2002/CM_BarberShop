@@ -34,14 +34,14 @@ namespace Presentacion
             this.BtnSalir = new System.Windows.Forms.Button();
             this.PanelPrincipal = new System.Windows.Forms.Panel();
             this.BtnModificar = new System.Windows.Forms.Button();
-            this.CmbNuevoEstado = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TxtEstado = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.TxtIdReserva = new System.Windows.Forms.TextBox();
+            this.CmbNuevoEstado = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TxtEstado = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.PanelSuperior.SuspendLayout();
             this.PanelPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,23 +98,6 @@ namespace Presentacion
             this.BtnModificar.UseVisualStyleBackColor = true;
             this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
-            // CmbNuevoEstado
-            // 
-            this.CmbNuevoEstado.FormattingEnabled = true;
-            this.CmbNuevoEstado.Location = new System.Drawing.Point(353, 225);
-            this.CmbNuevoEstado.Name = "CmbNuevoEstado";
-            this.CmbNuevoEstado.Size = new System.Drawing.Size(204, 28);
-            this.CmbNuevoEstado.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(246, 225);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Nuevo estado:";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -124,22 +107,6 @@ namespace Presentacion
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(293, 179);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Estado:";
-            // 
-            // TxtEstado
-            // 
-            this.TxtEstado.Location = new System.Drawing.Point(353, 179);
-            this.TxtEstado.Name = "TxtEstado";
-            this.TxtEstado.Size = new System.Drawing.Size(204, 27);
-            this.TxtEstado.TabIndex = 3;
             // 
             // label1
             // 
@@ -167,6 +134,39 @@ namespace Presentacion
             this.TxtIdReserva.Size = new System.Drawing.Size(482, 27);
             this.TxtIdReserva.TabIndex = 0;
             // 
+            // CmbNuevoEstado
+            // 
+            this.CmbNuevoEstado.FormattingEnabled = true;
+            this.CmbNuevoEstado.Location = new System.Drawing.Point(353, 225);
+            this.CmbNuevoEstado.Name = "CmbNuevoEstado";
+            this.CmbNuevoEstado.Size = new System.Drawing.Size(204, 28);
+            this.CmbNuevoEstado.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(293, 179);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Estado:";
+            // 
+            // TxtEstado
+            // 
+            this.TxtEstado.Location = new System.Drawing.Point(353, 179);
+            this.TxtEstado.Name = "TxtEstado";
+            this.TxtEstado.Size = new System.Drawing.Size(204, 27);
+            this.TxtEstado.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(246, 225);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Nuevo estado:";
+            // 
             // FrmCambiarEstadoReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -193,13 +193,13 @@ namespace Presentacion
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Panel PanelPrincipal;
         private System.Windows.Forms.Button BtnModificar;
-        private System.Windows.Forms.ComboBox CmbNuevoEstado;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TxtEstado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.TextBox TxtIdReserva;
+        private System.Windows.Forms.ComboBox CmbNuevoEstado;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox TxtEstado;
     }
 }

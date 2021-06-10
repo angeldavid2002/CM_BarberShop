@@ -33,6 +33,23 @@ namespace Datos
                 return filas;
             }
         }
+        public int Actualizar(Barbero persona)
+        {
+            using (var command = conexion.CreateCommand())
+            {
+                command.CommandText = "UPDATE barbero set nombre = :nombrenuevo, apellido = :apellidonuevo, numerotelefono = :numerotelefononuevo, edad = :edadnueva, direccion = :direccionnueva where identificacion = :identificacionactual";
+                command.Parameters.Add("nombrenuevo", OracleDbType.Varchar2).Value = persona.nombre;
+                command.Parameters.Add("apellidonuevo", OracleDbType.Varchar2).Value = persona.apellido;
+                command.Parameters.Add("numerotelefononuevo", OracleDbType.Varchar2).Value = persona.numeroTelefono;
+                command.Parameters.Add("edadnueva", OracleDbType.Decimal).Value = persona.edad;
+                command.Parameters.Add("direccionnueva", OracleDbType.Varchar2).Value = persona.direccion;
+                command.Parameters.Add("identificacionactual", OracleDbType.Varchar2).Value = persona.identificacion;
+
+                var filas = command.ExecuteNonQuery();
+                return filas;
+            }
+        }
+
         public List<Barbero> ConsultarTodos()
         {
             List<Barbero> barberos = new List<Barbero>();

@@ -98,6 +98,30 @@ namespace Logica
                 connection.Close();
             }
         }
+        
+        public string Actualizar(Barbero barbero)
+        {
+            try
+            {
+                connection.Open();
+                if (barberoRepository.BuscarPorIdentificacion(barbero.identificacion) != null)
+                {
+                    return "Se actualizaron los datos exitosamente ("+ barberoRepository.Actualizar(barbero)+")";
+                }
+                else
+                {
+                    return "el cliente no existe existe";
+                }
+            }
+            catch (Exception e)
+            {
+                return "Error de la aplicacion: " + e.Message;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
         public string GenerarPdf(List<Cliente> clientes, string filename)
         {
             DocumentoPdf documentoPdf = new DocumentoPdf();
